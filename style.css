@@ -32,22 +32,22 @@
 
 
 /* ====================Main Navbar===========================*/
-.main-navbar{
+/* ====================Main Navbar===========================*/
+.main-navbar {
     top: 0;
-    z-index: 100;
-    background-color: rgba(255, 255, 255, 0.95) !important;
-    backdrop-filter: blur(8px); /* Frosted Glass Effect on Scroll */
+    z-index: 1050;
+    background-color: rgba(255, 255, 255) !important;
+    /* backdrop-filter: blur(8px); */
     transition: all 0.3s ease;
 }
 
-.main-navbar, .offcanvas-header {
-    background-color: rgb(242, 244, 246);
+.main-navbar .nav-link {
+    font-size: 15px;
+    color: #0d233a;
+    transition: color 0.2s ease;
 }
 
-.main-navbar .nav-link{
-    font-size: 15px;
-}
-.main-navbar .nav-link:hover{
+.main-navbar .nav-link:hover {
     color: #0d3b88 !important;
 }
 
@@ -55,26 +55,28 @@
     transition: transform 0.3s ease-in-out;
 }
 
-/* Navbar Brand par Hover hote hi Image/Logo Scale Up hoga */
 .navbar-brand:hover img {
-    transform: scale(1.05); /* Logo smooth scale up */
+    transform: scale(1.05);
 }
 
-.btn-join-community a{
-    background-color: #003b8e; /* Screenshot se matched dark blue */
+.btn-join-community a {
+    background-color: #0d3b88;
     color: #ffffff;
-    border-radius: 20px;
+    border-radius: 50rem;
     font-size: 14px;
     transition: all 0.3s ease-in-out;
 }
-.btn-join-community:hover {
-    background-color: #ffffff !important; /* Slightly darker blue on hover */
-    color: #0d3b88 !important;
-    border-color: #0d3b88 !important;
+
+.btn-join-community a:hover {
+    background-color: #00B050 !important;
+    color: #ffffff !important;
 }
 
-/* ====================Main Navbar===========================*/
-
+.offcanvas .offcanvas-header,
+.offcanvas .offcanvas-body {
+    background-color: #ffffff;
+}
+/* ====================Main Navbar End===========================*/
 /* ====================Hero Section ===========================*/
 .hero-section {
     background-image: url('images/hero-section-image-1.jpg');
