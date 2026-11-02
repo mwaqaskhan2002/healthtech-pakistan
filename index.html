@@ -20,29 +20,28 @@
 <body>
 
     <!-- Main Navbar -->
-    <nav class="main-navbar navbar navbar-expand-lg  py-2">
+    <nav class="main-navbar navbar navbar-expand-lg py-2 sticky-top bg-white-75 shadow-sm">
         <div class="container-lg">
             <!-- Brand / Logo -->
             <a class="navbar-brand d-flex align-items-center gap-2 text-decoration-none" href="/">
-                <img src="images/healthtech-logo.jpg" alt="HealthTech Pakistan Logo"
-                    class="rounded-circle" style="width: 52px; height: 52px; object-fit: cover;">
-                    <div class="d-flex flex-column">
-                        <span class="inter-700 fs-5 lh-1">
-                            <span style="color: #0d3b88;">Health</span><span style="color: #00B050;">Tech</span>
-                        </span>
-                        <span class="inter-600 text-uppercase tracking-wider"
-                            style="color: #64748b; font-size: 10px;">
-                            Pakistan
-                        </span>          
-                    </div>        
+                <img src="images/healthtech-logo.jpg" alt="HealthTech Pakistan Logo" class="rounded-circle"
+                    style="width: 52px; height: 52px; object-fit: cover;">
+                <div class="d-flex flex-column">
+                    <span class="inter-700 fs-5 lh-1">
+                        <span style="color: #0d3b88;">Health</span><span style="color: #00B050;">Tech</span>
+                    </span>
+                    <span class="inter-600 text-uppercase tracking-wider" style="color: #64748b; font-size: 10px;">
+                        Pakistan
+                    </span>
+                </div>
             </a>
-
+    
             <!-- Mobile Toggle Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+    
             <!-- Offcanvas Menu -->
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
                 aria-labelledby="offcanvasNavbarLabel">
@@ -72,7 +71,7 @@
                             <a class="nav-link inter-500" href="#">Forum</a>
                         </li>
                     </ul>
-
+    
                     <!-- Join Community Button -->
                     <div class="join-community-btn ms-lg-3 mt-3 mt-lg-0">
                         <button type="button" class="btn btn-join-community rounded-pill p-0">
@@ -119,10 +118,10 @@
 
                     <!-- Action Buttons -->
                     <div class="action-buttons d-flex flex-wrap gap-3 mb-4">
-                        <a href="#" class="btn btn-lg px-4 py-3 inter-500 btn-member text-white">
+                        <a href="#" class="btn btn-lg px-4 py-3 inter-700 btn-member text-white">
                             Become a Member
                         </a>
-                        <a href="#" class="btn btn-lg px-4 py-3 inter-500 btn-insights text-white">
+                        <a href="#" class="btn btn-lg px-4 py-3 inter-700 btn-insights text-white">
                             Explore Insights
                         </a>              
                     </div>
@@ -231,23 +230,22 @@
             </div>
     
             <!-- Cards Row -->
-            <div class="row row-cols-lg-3 row-cols-1 g-4 justify-content-center">
-    
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+            
                 <!-- Card 1: Healthcare IT -->
                 <div class="col">
                     <div class="focus-card card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
                         <div class="card-body p-0 d-flex flex-column">
-                            <!-- Icon Box -->
-                            <div class="icon-box rounded-3 d-flex align-items-center justify-content-center mb-4" style="background-color: #e8f1ff">
+                            <div class="icon-box rounded-3 d-flex align-items-center justify-content-center mb-4"
+                                style="background-color: #e8f1ff">
                                 <i class="fa-solid fa-microchip fs-5" style="color: #003B8E;"></i>
                             </div>
-    
+            
                             <h4 class="inter-700 fs-5 mb-3" style="color: #0d233a;">Healthcare IT</h4>
                             <p class="text-secondary inter-400 small mb-4 flex-grow-1" style="line-height: 1.6;">
-                                Modernizing hospital information systems and electronic medical records (EMR) for efficient
-                                care.
+                                Modernizing hospital information systems and electronic medical records (EMR) for efficient care.
                             </p>
-    
+            
                             <a href="#" class="focus-link text-decoration-none inter-600 d-inline-flex align-items-center"
                                 style="color: #0d3b88;">
                                 View Resources <i class="fa-solid fa-arrow-right ms-2 fs-6"></i>
@@ -255,22 +253,21 @@
                         </div>
                     </div>
                 </div>
-    
-                <!-- Card 2: AI & Digital Health (Highlighted) -->
+            
+                <!-- Card 2: AI & Digital Health (Green Variant) -->
                 <div class="col">
-                    <div class="focus-card card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
+                    <div class="focus-card focus-card-green card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
                         <div class="card-body p-0 d-flex flex-column">
-                            <!-- Icon Box (Green Highlight variant matching design) -->
-                            <div class="icon-box rounded-3 d-flex align-items-center justify-content-center mb-4" style="background-color: #F0FDF4;">
+                            <div class="icon-box rounded-3 d-flex align-items-center justify-content-center mb-4"
+                                style="background-color: #F0FDF4;">
                                 <i class="fa-solid fa-brain fs-5" style="color: #00c853;"></i>
                             </div>
-    
+                
                             <h4 class="inter-700 fs-5 mb-3" style="color: #0d233a;">AI & Digital Health</h4>
                             <p class="text-secondary inter-400 small mb-4 flex-grow-1" style="line-height: 1.6;">
-                                Harnessing artificial intelligence for diagnostics, predictive analytics, and personalized
-                                medicine.
+                                Harnessing artificial intelligence for diagnostics, predictive analytics, and personalized medicine.
                             </p>
-    
+                
                             <a href="#" class="focus-link text-decoration-none inter-600 d-inline-flex align-items-center"
                                 style="color: #00c853;">
                                 View Resources <i class="fa-solid fa-arrow-right ms-2 fs-6"></i>
@@ -278,31 +275,27 @@
                         </div>
                     </div>
                 </div>
-    
                 <!-- Card 3: Cybersecurity & Privacy -->
                 <div class="col">
                     <div class="focus-card card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
                         <div class="card-body p-0 d-flex flex-column">
-                            <!-- Icon Box -->
                             <div class="icon-box rounded-3 d-flex align-items-center justify-content-center mb-4"
-                            style="background-color: #e8f1ff">
+                                style="background-color: #e8f1ff">
                                 <i class="fa-solid fa-shield-halved fs-5" style="color: #003B8E"></i>
                             </div>
-    
+            
                             <h4 class="inter-700 fs-5 mb-3" style="color: #0d233a;">Cybersecurity & Privacy</h4>
                             <p class="text-secondary small mb-4 flex-grow-1 inter-500" style="line-height: 1.6;">
-                                Securing patient data and ensuring compliance with emerging digital privacy standards in
-                                Pakistan.
+                                Securing patient data and ensuring compliance with emerging digital privacy standards in Pakistan.
                             </p>
-    
+            
                             <a href="#" class="focus-link text-decoration-none inter-600 d-inline-flex align-items-center"
                                 style="color: #0d3b88;">
                                 View Resources <i class="fa-solid fa-arrow-right ms-2 fs-6"></i>
                             </a>
                         </div>
                     </div>
-                </div>
-    
+                </div>      
             </div>
         </div>
     </section>
@@ -431,41 +424,33 @@
                     Deep dives into the trends shaping healthcare technology in our region.
                 </p>
             </div>
-    
             <!-- Cards Grid Row -->
             <div class="row row-cols-lg-3 row-cols-1 g-4 justify-content-center">
-    
-                <!-- Card 1: Policy -->
+                <!-- Card 1: Policy (Blue Tag -> Blue Title on Hover) -->
                 <div class="col">
                     <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white insight-card">
-                        <!-- Card Image -->
                         <div class="insight-img-wrapper position-relative">
                             <img src="images/latest-insight-card-1-image.png" alt="The Roadmap to Interoperability in PK"
                                 class="w-100 object-fit-cover" style="height: 200px;">
                         </div>
-    
-                        <!-- Card Body -->
+                
                         <div class="card-body p-4 d-flex flex-column justify-content-between">
                             <div>
-                                <!-- Meta: Tag & Read Time -->
                                 <div class="d-flex align-items-center mb-3">
-                                    <span class="badge px-2.5 py-1.5 inter-600 small"
+                                    <span class="badge px-2.5 py-1.5 inter-600 small badge-blue"
                                         style="background-color: #e8f1ff; color: #0d3b88; font-size: 11px;">POLICY</span>
-                                    <span class="small inter-400 ms-3" style="color: #9BA9BC">5 min read</span>
+                                    <span class="small inter-400 ms-3" style="color: #9BA9BC; font-size: 12px;">5 min read</span>
                                 </div>
-    
-                                <!-- Title -->
-                                <h4 class="inter-700 fs-5 mb-2" style="color: #0d233a;">
+                
+                                <h4 class="inter-700 mb-2 insight-title">
                                     The Roadmap to Interoperability in PK
                                 </h4>
-    
-                                <!-- Description -->
+                
                                 <p class="text-secondary inter-500 small mb-4" style="line-height: 1.6;">
                                     How we can build a unified health data exchange platform for public and private sectors.
                                 </p>
                             </div>
-    
-                            <!-- Card Footer: Author & Bookmark -->
+                
                             <div class="insight-card-footer d-flex align-items-center justify-content-between pt-3">
                                 <div class="d-flex align-items-center gap-2">
                                     <img src="images/avatar-1.jpg" alt="Dr. Sarah Ahmed" class="rounded-circle border"
@@ -474,44 +459,38 @@
                                 </div>
                                 <label class="bookmark-btn d-inline-flex align-items-center justify-content-center rounded-3">
                                     <input type="checkbox" class="d-none">
-                                    <i class="fa-solid fa-bookmark fs-6"></i>                        
+                                    <i class="fa-solid fa-bookmark fs-6"></i>
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
-    
-                <!-- Card 2: Cybersecurity -->
+                
+                <!-- Card 2: Cybersecurity (Green Tag -> Green Title on Hover) -->
                 <div class="col">
                     <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white insight-card">
-                        <!-- Card Image -->
                         <div class="insight-img-wrapper position-relative">
                             <img src="images/latest-insight-card-2-image.png" alt="Protecting Patient Privacy in 2024"
                                 class="w-100 object-fit-cover" style="height: 200px;">
                         </div>
-    
-                        <!-- Card Body -->
+                
                         <div class="card-body p-4 d-flex flex-column justify-content-between">
                             <div>
-                                <!-- Meta: Tag & Read Time -->
                                 <div class="d-flex align-items-center mb-3">
-                                    <span class="badge px-2.5 py-1.5 inter-600 small"
-                                        style="background-color: #e6f9ed; color: #00c853; font-size: 11px;">CYBERSECURITY</span>
-                                    <span class="small inter-400 ms-3" style="color: #9BA9BC;">8 min read</span>
+                                    <span class="badge px-2.5 py-1.5 inter-600 small badge-green"
+                                        style="background-color: #F0FDF4; color: #00B050; font-size: 11px;">CYBERSECURITY</span>
+                                    <span class="small inter-400 ms-3" style="color: #9BA9BC; font-size: 12px;">8 min read</span>
                                 </div>
-    
-                                <!-- Title -->
-                                <h4 class="inter-700 fs-5 mb-2" style="color: #0d233a;">
+                
+                                <h4 class="inter-700 mb-2 insight-title">
                                     Protecting Patient Privacy in 2024
                                 </h4>
-    
-                                <!-- Description -->
+                
                                 <p class="text-secondary inter-500 small mb-4" style="line-height: 1.6;">
                                     Key strategies for hospital IT managers to defend against rising ransomware attacks.
                                 </p>
                             </div>
-    
-                            <!-- Card Footer: Author & Bookmark -->
+                
                             <div class="insight-card-footer d-flex align-items-center justify-content-between pt-3">
                                 <div class="d-flex align-items-center gap-2">
                                     <img src="images/avatar-2.jpg" alt="Engr. Omar Farooq" class="rounded-circle border"
@@ -526,37 +505,32 @@
                         </div>
                     </div>
                 </div>
-    
-                <!-- Card 3: Startups -->
+                
+                <!-- Card 3: Startups (Blue Tag -> Blue Title on Hover) -->
                 <div class="col">
                     <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white insight-card">
-                        <!-- Card Image -->
                         <div class="insight-img-wrapper position-relative">
                             <img src="images/latest-insight-card-3-image.png" alt="Scaling HealthTech Startups in Pakistan"
                                 class="w-100 object-fit-cover" style="height: 200px;">
                         </div>
-    
-                        <!-- Card Body -->
+                
                         <div class="card-body p-4 d-flex flex-column justify-content-between">
                             <div>
-                                <!-- Meta: Tag & Read Time -->
                                 <div class="d-flex align-items-center mb-3">
-                                    <span class="badge px-2.5 py-1.5 inter-600 small"
+                                    <span class="badge px-2.5 py-1.5 inter-600 small badge-blue"
                                         style="background-color: #e8f1ff; color: #0d3b88; font-size: 11px;">STARTUPS</span>
-                                    <span class="small inter-400 ms-3" style="color: #9BA9BC;">12 min read</span>
+                                    <span class="small inter-400 ms-3" style="color: #9BA9BC; font-size: 12px;">12 min read</span>
                                 </div>
-    
-                                <!-- Title -->
-                                <h4 class="inter-700 fs-5 mb-2" style="color: #0d233a;">
+                
+                                <h4 class="inter-700 mb-2 insight-title">
                                     Scaling HealthTech Startups in Pakistan
                                 </h4>
-    
-                                <!-- Description -->
+                
                                 <p class="text-secondary inter-500 small mb-4" style="line-height: 1.6;">
                                     An analysis of the current investment landscape and regulatory hurdles for founders.
                                 </p>
                             </div>
-                            <!-- Card Footer: Author & Bookmark -->
+                
                             <div class="insight-card-footer d-flex align-items-center justify-content-between pt-3">
                                 <div class="d-flex align-items-center gap-2">
                                     <img src="images/avatar-3.jpg" alt="Zainab Khan" class="rounded-circle border"
@@ -571,7 +545,6 @@
                         </div>
                     </div>
                 </div>
-    
             </div>
         </div>
     </section>
