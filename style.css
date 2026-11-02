@@ -1,0 +1,398 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.outline * {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+/* Fonts */
+.inter-400{
+    font-family: "Inter", sans-serif !important;
+    font-weight: 400 !important;
+}
+.inter-500{
+    font-family: "Inter", sans-serif !important;
+    font-weight: 500 !important;
+}
+.inter-600{
+    font-family: "Inter", sans-serif !important;
+    font-weight: 600 !important;
+}
+.inter-700{
+    font-family: "Inter", sans-serif !important;
+    font-weight: 700 !important;
+}
+
+
+/* ====================Main Navbar===========================*/
+.main-navbar, .offcanvas-header {
+    background-color: rgb(242, 244, 246);
+}
+
+.main-navbar .nav-link{
+    font-size: 15px;
+}
+
+.btn-join-community a{
+    background-color: #003b8e; /* Screenshot se matched dark blue */
+    color: #ffffff;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-join-community:hover {
+    background-color: #ffffff !important; /* Slightly darker blue on hover */
+    color: #0d3b88 !important;
+    border-color: #0d3b88 !important;
+}
+
+/* ====================Main Navbar===========================*/
+
+/* ====================Hero Section ===========================*/
+.hero-section {
+    background-image: url('images/hero-section-image-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    padding-top: 100px; /* Navbar fixed-top hone ki wajah se top spacing */
+}
+
+/* Dark Blue Gradient Overlay */
+.hero-overlay {
+    background: rgba(2, 31, 65, 0.95);
+    z-index: 1;
+}
+
+.hero-content-container {
+    z-index: 2;
+}
+
+/* Hero Badge */
+.hero-badge {
+    background-color: rgba(2, 41, 86);
+    border: 1px solid rgba(1, 45, 100);
+    color: rgba(147, 197, 253);
+    font-size: clamp(12px, 1.5vw, 14px); /* Clamp for badge font */
+    backdrop-filter: blur(5px);
+}
+
+.hero-section h1 {
+    font-size: clamp(2.2rem, 4vw + 1rem, 3.8rem);
+    line-height: 1.2;
+}
+
+.hero-section p{
+    font-size: clamp(1rem, 1.2vw + 0.5rem, 1.15rem);
+    color: rgba(103, 126, 156);
+}
+
+.hero-section .action-buttons a{
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        min-height: auto;
+        padding-top: 120px;
+        padding-bottom: 40px;
+    }
+}
+
+.btn-member {
+    background-color: #00B050 !important;
+    color: #ffffff !important;
+    border: none;
+    transition: all 0.3s ease;
+}
+.btn-member:hover {
+    background-color: #009643;
+    /* transform: translateY(-2px); */
+    box-shadow: 0 6px 15px rgba(0, 176, 80, 0.3);
+}
+
+.btn-insights {
+    background-color: #1A385A !important;
+    color: #ffffff !important;
+    border: 1px solid #244061;
+    transition: all 0.3s ease;
+}
+.btn-insights:hover {
+    background-color: #122841;
+    /* transform: translateY(-2px); */
+    box-shadow: 0 6px 15px rgba(26, 56, 90, 0.3);
+}
+
+/* ====================Hero Section End===========================*/
+
+/* ====================About Section ===========================*/
+.about-section h2{
+    font-size: clamp(1.5rem, 1.3036rem + 0.9821vw, 2.1875rem);
+    color: #0d233a;
+}
+
+.about-section p{
+    font-size: 14px;
+}
+
+.about-section .checks{
+    width: 28px; 
+    height: 28px; 
+    background-color: #e8f1ff; 
+    color: #0d3b88; 
+    flex-shrink: 0;
+}
+
+.about-section .checks i{
+    font-size: 12px;
+}
+
+.about-section .learn-more-action {
+    color: #0d3b88 !important; 
+    font-size: 16px;
+    text-decoration: none !important; 
+}
+
+.about-section ul li p{
+    font-size: 14px;
+}
+
+.about-section .learn-more-action:hover {
+    text-decoration: underline !important; 
+    color: #0d3b88 !important; 
+}
+
+/* Floating Card Position Overlay */
+.floating-stat-card {
+    bottom: -30px;
+    left: -30px;
+    max-width: 280px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    z-index: 3;
+}
+
+.floating-stat-card h3{
+    font-size: 30px;
+    color: rgb(0, 176, 80);
+}
+.floating-stat-card p{
+    font-size: 14px;
+    color: rgba(153, 162, 168);
+    max-width: 220px; 
+    line-height: 1.4;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 991.98px) {
+    .floating-stat-card {
+        position: relative !important;
+        bottom: auto;
+        left: auto;
+        margin-top: -120px;
+        max-width: 100%;
+    }
+}
+
+/* ====================About Section End ===========================*/
+/* ====================Focus Areas Section ===========================*/
+.focus-areas-section{
+    background-color: rgba(248, 250, 252);
+}
+
+.focus-areas-section h2{
+    color: #0d233a; 
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+}
+
+.focus-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.focus-card .icon-box{
+    width: 48px; 
+    height: 48px; 
+}
+
+/* .focus-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+} */
+
+.focus-link {
+    transition: color 0.2s ease;
+}
+
+.focus-link:hover {
+    text-decoration: underline !important;
+}
+/* ====================Focus Areas Section End ===========================*/
+/* ====================Upcoming Event Section ===========================*/
+.btn-view-all {
+    color: #0d3b88 !important;
+    border-color: #0d3b88 !important;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+.btn-view-all:hover {
+    background-color: #0d3b88 !important;
+    color: #ffffff !important;
+}
+
+.event-card {
+    background-color: #F8FAFC !important;
+}
+
+.event-link {
+    transition: color 0.2s ease;
+}
+
+.event-link:hover {
+    text-decoration: underline !important;
+}
+
+/* ====================Upcoming Event Section End ===========================*/
+
+/* ====================Insights Section ===========================*/
+/* Insight Card Hover Animation */
+/* .insight-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+.insight-card-footer{
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* .insight-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+} */
+
+/* Bookmark Button Interaction */
+/* Bookmark Button Box */
+.bookmark-btn {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Default Bookmark Icon Color */
+.bookmark-btn i {
+    color: #cbd5e1; /* Light grey/blue bookmark icon */
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover State */
+.bookmark-btn:hover {
+    border-color: #0d3b88; /* Dark blue border on hover */
+    background-color: #f8fafc;
+}
+
+.bookmark-btn:hover i {
+    color: #0d3b88; /* Dark blue icon on hover */
+}
+
+
+.bookmark-btn:has(input:checked) i {
+    color: #0d3b88;
+}
+/* ====================Insights Section End ===========================*/
+/* ====================Partners Section===========================*/
+.partner-item .badge{
+    background-color: #FCFDFE !important;
+    color: #BDBDBD !important;
+}
+/* ====================Partners Section End===========================*/
+
+/* ====================CTA Section  ===========================*/
+.cta-section {
+    background-color: #0d3b88;
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+/* White Button Hover (Register as a Member) */
+.cta-btn-white {
+    background-color: #ffffff !important;
+    color: #0d3b88 !important;
+    border: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.cta-btn-white:hover {
+    background-color: #f1f5f9 !important;
+    /* transform: translateY(-2px); */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Green Button Hover (Contact Partnerships) */
+.cta-btn-green {
+    background-color: #00B050 !important;
+    color: #ffffff !important;
+    border: none;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.cta-btn-green:hover {
+    background-color: #009643;
+    /* transform: translateY(-2px); */
+    box-shadow: 0 6px 15px rgba(0, 176, 80, 0.3);
+}
+/* ====================CTA Section End===========================*/
+
+/* Footer Links Hover State */
+.footer-link {
+    transition: color 0.2s ease, padding-left 0.2s ease;
+    color: rgba(103, 126, 156);
+}
+
+.footer-link:hover {
+    color: #ffffff !important;
+    text-decoration: underline !important;
+}
+
+/* Digitech Infra Link Styling & Hover */
+.digitech-link {
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.digitech-link:hover {
+    text-decoration: underline !important;
+}
+
+/* Social Media Icons Hover State */
+.social-icon {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: #1E293B /* Dark Blue Background */
+}
+
+.social-icon:hover {
+    background-color: #0d3b88 !important;
+}
+
+/* Back to Top Link Hover State */
+.back-to-top {
+    transition: color 0.2s ease;
+}
+
+.back-to-top:hover {
+    color: #ffffff !important;
+}
+
+.back-to-top i {
+    transition: transform 0.2s ease;
+}
+
+.back-to-top:hover i {
+    transform: translateY(-2px);
+}
