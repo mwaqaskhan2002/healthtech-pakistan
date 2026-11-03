@@ -326,7 +326,7 @@
 }
 
 .focus-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .focus-card .icon-box {
@@ -340,7 +340,7 @@
 }
 
 .focus-card:hover {
-    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.1) !important;
 }
 
 .focus-card:hover .icon-box {
@@ -447,7 +447,7 @@
 
 .insight-card:hover {
     /* transform: translateY(-5px); */
-    box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.1) !important;
 }
 
 
