@@ -41,7 +41,7 @@
     transition: all 0.3s ease;
 }
 
-.main-navbar .nav-link {
+.main-navbar .nav-link{
     position: relative;
     font-size: 15px;
     color: #0d233a;
@@ -54,7 +54,7 @@
     position: absolute;
     width: 0;
     height: 2px;
-    bottom: 2px; /* Text se neechay line ki spacing */
+    bottom: -1px; /* Text se neechay line ki spacing */
     left: 0;
     background-color: #0d3b88; /* Brand blue color (aap #00B050 green bhi kar sakte hain) */
     transition: width 0.3s ease-in-out;
@@ -86,6 +86,10 @@
 
 .navbar-brand:hover img {
     transform: scale(1.05);
+}
+
+.offcanvas-header .btn-close {
+    transition: transform 0.2s ease;
 }
 
 .btn-join-community a {
@@ -170,7 +174,6 @@
     font-size: 16px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .hero-section {
         min-height: auto;
@@ -179,7 +182,6 @@
     }
 }
 
-/* 1. Become a Member Button */
 .btn-member {
     background-color: #00B050 !important;
     color: #ffffff !important;
@@ -191,7 +193,7 @@
 }
 
 .btn-member:hover {
-    background-color: #3CD87A !important; /* Vibrant lighter green shade */
+    background-color: #3CD87A !important; 
     color: #ffffff !important;
     border-color: #3CD87A !important;
     backdrop-filter: blur(4px);
@@ -199,7 +201,6 @@
     box-shadow: 0 8px 20px rgba(60, 216, 122, 0.35) !important;
 }
 
-/* 2. Explore Insights Button */
 .btn-insights {
     background-color: rgba(255, 255, 255, 0.12) !important;
     color: #ffffff !important;
@@ -270,22 +271,19 @@
     transition: color 0.2s ease;
 }
 
-/* Arrow icon ke liye smooth transition */
 .about-section .learn-more-action i {
     transition: transform 0.3s ease;
 }
 
-/* Hover State: Text black aur arrow aagay move hoga */
 .about-section .learn-more-action:hover {
-    color: #000000 !important; /* Text color black */
+    color: #041e43 !important;
     text-decoration: none !important; 
 }
 
 .about-section .learn-more-action:hover i {
-    transform: translateX(5px); /* Arrow halka sa right aagay ho jayega */
+    transform: translateX(5px); 
 }
 
-/* Floating Card Position Overlay */
 .floating-stat-card {
     bottom: -30px;
     left: -30px;
@@ -305,7 +303,6 @@
     line-height: 1.4;
 }
 
-/* Responsive adjustments for mobile screens */
 @media (max-width: 991.98px) {
     .floating-stat-card {
         position: relative !important;
@@ -327,7 +324,6 @@
     font-size: clamp(1.8rem, 3vw, 2.5rem);
 }
 
-/* Focus Card Transition Setup */
 .focus-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -342,12 +338,10 @@
     transition: color 0.3s ease;
 }
 
-/* Card Hover Elevation */
 .focus-card:hover {
     box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08) !important;
 }
 
-/* Default / Standard Cards Hover (Healthcare IT & Cybersecurity) -> Solid Blue Background + White Icon */
 .focus-card:hover .icon-box {
     background-color: #0d3b88 !important; 
 }
@@ -356,7 +350,6 @@
     color: #ffffff !important; 
 }
 
-/* Green Variant Card Hover (AI & Digital Health) -> Solid Green Background + White Icon */
 .focus-card.focus-card-green:hover .icon-box {
     background-color: #00B050 !important; 
 }
@@ -365,22 +358,23 @@
     color: #ffffff !important; 
 }
 
-/* Hover par Title aur View Resources Link transition */
 .focus-card h4 {
-    transition: color 0.3s ease;
+    transition: color 0.2s ease;
 }
 
 .focus-link {
     transition: color 0.2s ease;
+    display: inline-flex;
+    align-items: center;
 }
 
-/* .focus-card:hover .focus-link {
-    color: #00B050 !important;
-} */
+.focus-link i {
+    transition: transform 0.2s ease;
+}
 
-/* .focus-link:hover {
-    text-decoration: underline !important;
-} */
+.focus-link:hover i {
+    transform: translateX(5px);
+}
 
 /* ====================Focus Areas Section End ===========================*/
 /* ====================Upcoming Event Section ===========================*/
@@ -395,12 +389,25 @@
     color: #ffffff !important;
 }
 
-/* Event Card Hover Effect */
 .event-card {
     background-color: #F8FAFC !important;
     transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
-/* Event Card par hover hone par h4 ka color blue ho jaye */
+
+.event-card img {
+    transition: transform 0.4s ease-in-out;
+}
+
+.event-card:hover img {
+    transform: scale(1.08); 
+}
+
+.event-card .row > div:first-child {
+    overflow: hidden; 
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
 .event-card h4 {
     transition: color 0.3s ease;
 }
@@ -414,15 +421,14 @@
     align-items: center;
 }
 
-/* Arrow icon ke liye smooth transition */
 .event-link i {
     transition: transform 0.3s ease;
 }
 
 /* Hover State: Text underline aur arrow aagay move hoga */
-.event-link:hover {
+/* .event-link:hover {
     color: #000000 !important;
-}
+} */
 
 .event-link:hover i {
     transform: translateX(5px); /* Arrow halka sa right aagay ho jayega */
@@ -432,7 +438,7 @@
 
 /* ====================Insights Section ===========================*/
 
-/* Card Container Elevation */
+
 .insight-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -442,9 +448,9 @@
     box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08) !important;
 }
 
-/* 1. Image Scale Up Effect */
+
 .insight-img-wrapper {
-    overflow: hidden; /* Ensures image doesn't overflow container during zoom */
+    overflow: hidden; 
 }
 
 .insight-img-wrapper img {
@@ -452,34 +458,28 @@
 }
 
 .insight-card:hover .insight-img-wrapper img {
-    transform: scale(1.05); /* Smooth image zoom */
+    transform: scale(1.05); 
 }
 
-/* 2. Title Transitions */
 .insight-title {
     color: #0d233a;
     transition: color 0.3s ease;
     font-size: 18px;
 }
 
-/* Blue Badge Cards (Card 1 & Card 3) -> Title becomes Blue on Hover */
 .insight-card:has(.badge-blue):hover .insight-title {
     color: #0d3b88 !important;
 }
 
-/* Green Badge Card (Card 2) -> Title becomes Green on Hover */
 .insight-card:hover .badge-green ~ .insight-title,
 .insight-card:has(.badge-green):hover .insight-title {
     color: #00B050 !important;
 }
 
-/* Footer Border Line */
 .insight-card-footer {
     border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-/* Bookmark Button Interaction */
-/* Bookmark Button Box */
 .bookmark-btn {
     width: 32px;
     height: 32px;
@@ -487,20 +487,18 @@
     transition: all 0.2s ease;
 }
 
-/* Default Bookmark Icon Color */
 .bookmark-btn i {
-    color: #cbd5e1; /* Light grey/blue bookmark icon */
+    color: #cbd5e1; 
     transition: color 0.2s ease, transform 0.2s ease;
 }
 
-/* Hover State */
 .bookmark-btn:hover {
-    border-color: #0d3b88; /* Dark blue border on hover */
+    border-color: #0d3b88; 
     background-color: #f8fafc;
 }
 
 .bookmark-btn:hover i {
-    color: #0d3b88; /* Dark blue icon on hover */
+    color: #0d3b88;
 }
 
 
@@ -522,8 +520,7 @@
     padding: 60px 0;
     text-align: center;
 }
-/* White Button Hover (Register as a Member) */
-/* 1. White CTA Button (Register as a Member) */
+
 .cta-btn-white {
     background-color: #ffffff !important;
     color: #0d3b88 !important;
@@ -534,12 +531,11 @@
 }
 
 .cta-btn-white:hover {
-    background-color: #e2e8f0 !important; /* Soft light background on hover */
+    background-color: #e2e8f0 !important; 
     color: #0d3b88 !important;
     transform: translateY(-2px);
 }
 
-/* 2. Green CTA Button (Contact Partnerships) */
 .cta-btn-green {
     background-color: #00B050 !important;
     color: #ffffff !important;
@@ -550,13 +546,12 @@
 }
 
 .cta-btn-green:hover {
-    background-color: #008f40 !important; /* Solid green background on hover */
+    background-color: #008f40 !important; 
     color: #ffffff !important;
     transform: translateY(-2px);
 }
 /* ====================CTA Section End===========================*/
 
-/* Footer Links Hover State */
 .footer-link {
     position: relative;
     transition: color 0.2s ease;
@@ -565,15 +560,14 @@
     text-decoration: none !important;
 }
 
-/* Animated Underline for Footer Links */
 .footer-link::after {
     content: '';
     position: absolute;
     width: 0;
-    height: 2px;
-    bottom: -2px; /* Link se thoda neechay */
+    height: 1px;
+    bottom: -1px; 
     left: 0;
-    background-color: #00B050; /* Green highlight color */
+    background-color: #00B050; 
     transition: width 0.3s ease-in-out;
 }
 
@@ -585,27 +579,40 @@
     width: 100%; 
 }
 
-
-/* Digitech Infra Link Styling & Hover */
 .digitech-link {
-    transition: color 0.2s ease, text-decoration 0.2s ease;
+    position: relative;
+    text-decoration: none !important;
+    transition: color 0.2s ease;
+}
+
+.digitech-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -1px; 
+    left: 0;
+    background-color: #ffffff; 
+    transition: width 0.3s ease-in-out;
 }
 
 .digitech-link:hover {
-    text-decoration: underline !important;
+    color: #ffffff !important; 
 }
 
-/* Social Media Icons Hover State */
+.digitech-link:hover::after {
+    width: 100%; /* Hover ya Active hone par line left se right smooth expand hogi */
+}
+
 .social-icon {
     transition: background-color 0.3s ease, transform 0.3s ease;
-    background-color: #1E293B /* Dark Blue Background */
+    background-color: #1E293B 
 }
 
 .social-icon:hover {
     background-color: #0d3b88 !important;
 }
 
-/* Back to Top Link Hover State */
 .back-to-top {
     transition: color 0.2s ease;
 }
