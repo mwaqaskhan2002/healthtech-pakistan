@@ -12,12 +12,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Caveat:wght@400..700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display&family=Geist:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moon+Dance&family=Noto+Sans+Mono:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HU&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Sora:wght@100..800&family=Space+Grotesk:wght@300..700&family=Syncopate:wght@400;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
         integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 
 </head>
 
-<body>
+<body class="homepage">
 
     <!-- Main Navbar -->
     <nav class="main-navbar navbar navbar-expand-lg py-2 sticky-top shadow-sm">
@@ -30,7 +36,7 @@
                     <span class="inter-700 fs-3 lh-1">
                         <span style="color: #0d3b88; letter-spacing: -1px;">Health</span><span style="color: #00B050; letter-spacing: -1px;">Tech</span>
                     </span>
-                    <span class="inter-600 text-uppercase tracking-wider" style="color: #64748b; font-size: 11px; letter-spacing: 6px;">
+                    <span class="inter-600 text-uppercase tracking-wider" style="color: #64748b; font-size: 11px; letter-spacing: 5px;">
                         Pakistan
                     </span>
                 </div>
@@ -57,7 +63,10 @@
                     <!-- Nav Links -->
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-lg-items-center">
                         <li class="nav-item px-2 mb-2 mb-lg-0">
-                            <a class="nav-link inter-500" href="#">About Us</a>
+                            <a class="nav-link inter-500" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item px-2 mb-2 mb-lg-0">
+                            <a class="nav-link inter-500" href="#">Leadership & Team</a>
                         </li>
                         <li class="nav-item px-2 mb-2 mb-lg-0">
                             <a class="nav-link inter-500"  href="#">Membership</a>
@@ -99,26 +108,26 @@
                 <div class="col-lg-8 col-md-10 text-white">
 
                     <!-- Badge -->
-                    <div class="hero-badge mb-3 inter-600 d-inline-flex align-items-center px-3 py-2 rounded-pill">
+                    <div class="hero-badge mb-3 inter-600 d-inline-flex align-items-center px-3 py-2 rounded-pill" data-aos="fade-down" data-aos-duration="800">
                         <span class="me-2"><i class="fa-solid fa-bolt"></i></span> Connecting Healthcare, Technology &
                         Innovation
                     </div>
 
                     <!-- Main Heading -->
-                    <h1 class="inter-700 mb-3">
+                    <h1 class="inter-700 mb-3" data-aos="fade-right" data-aos-duration="800" data-aos-delay="150">
                         Building the Future of <span style="color:rgba(147, 197, 253);">Health</span><span
                             style="color: #00e676;">Tech</span> Together
                     </h1>
 
                     <!-- Paragraph -->
-                    <p class="inter-400 mb-4" style="max-width: 650px;">
+                    <p class="inter-400 mb-4" style="max-width: 650px;" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
                         HealthTech Pakistan is the premier community bringing together doctors, tech innovators, and
                         policy
                         makers to transform Pakistan's healthcare ecosystem through technology.
                     </p>
 
                     <!-- Action Buttons -->
-                    <div class="action-buttons d-flex flex-wrap gap-3 mb-4">
+                    <div class="action-buttons d-flex flex-wrap gap-3 mb-4" data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">
                         <a href="#" class="btn btn-lg px-4 py-3 inter-700 btn-member text-white">
                             Become a Member
                         </a>
@@ -150,6 +159,8 @@
     </section>
     <!-- Hero Section -->
 
+    
+
     <!-- About Section -->
     <section class="about-section py-5 container-fluid">
         <div class="container">
@@ -157,18 +168,18 @@
     
                 <!-- Left Column: Text Content -->
                 <div class="col-lg-6">
-                    <h2 class="inter-700 mb-3">
+                    <h2 class="inter-700 mb-3" data-aos="fade-right">
                         Connecting the Dots in Pakistan's Health Landscape
                     </h2>
     
-                    <p class="text-secondary mb-4 inter-400">
+                    <p class="text-secondary mb-4 inter-400" data-aos="fade-up" data-aos-delay="100">
                         HealthTech Pakistan was founded to bridge the gap between traditional healthcare delivery and modern
                         digital solutions. We empower professionals to lead the digital transformation of hospitals,
                         clinics, and public health systems.
                     </p>
     
                     <!-- Check/Tick List Items -->
-                    <ul class="list-unstyled mb-4">
+                    <ul class="list-unstyled mb-4" data-aos="fade-up" data-aos-delay="200">
                         <li class="d-flex align-items-center mb-3">
                             <div class="checks rounded-circle d-flex align-items-center justify-content-center me-3">
                                 <i class="fa-solid fa-check"></i>
@@ -190,13 +201,13 @@
                     </ul>
     
                     <!-- Action Link -->
-                    <a href="#" class="learn-more-action text-decoration-none inter-600 d-inline-flex align-items-center">
+                    <a href="#" class="learn-more-action text-decoration-none inter-600 d-inline-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
                         Learn more about our mission <i class="fa-solid fa-arrow-right ms-2 fs-6"></i>
                     </a>
                 </div>
     
                 <!-- Right Column: Image with Floating Card -->
-                <div class="col-lg-6 position-relative">
+                <div class="col-lg-6 position-relative" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                     <div class="image-wrapper position-relative">
                         <!-- Main Image -->
                         <img src="images/about-section-image.png" alt="HealthTech Meeting"
@@ -221,7 +232,7 @@
     <section class="focus-areas-section py-5">
         <div class="container py-4">
             <!-- Section Header -->
-            <div class="text-center mb-5">
+            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="600">
                 <h2 class="inter-700 mb-2">
                     Our Focus Areas
                 </h2>
@@ -234,7 +245,7 @@
             <div class="row row-cols-1 row-cols-md-3 g-4">
             
                 <!-- Card 1: Healthcare IT -->
-                <div class="col">
+                <div class="col" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
                     <div class="focus-card card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
                         <div class="card-body p-0 d-flex flex-column">
                             <div class="icon-box rounded-3 d-flex align-items-center justify-content-center mb-4"
@@ -256,7 +267,7 @@
                 </div>
             
                 <!-- Card 2: AI & Digital Health (Green Variant) -->
-                <div class="col">
+                <div class="col" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                     <div class="focus-card focus-card-green card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
                         <div class="card-body p-0 d-flex flex-column">
                             <div class="icon-box rounded-3 d-flex align-items-center justify-content-center mb-4"
@@ -277,7 +288,7 @@
                     </div>
                 </div>
                 <!-- Card 3: Cybersecurity & Privacy -->
-                <div class="col">
+                <div class="col" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                     <div class="focus-card card border-0 shadow-sm rounded-4 p-4 h-100 bg-white">
                         <div class="card-body p-0 d-flex flex-column">
                             <div class="icon-box rounded-3 d-flex align-items-center justify-content-center mb-4"
@@ -303,11 +314,11 @@
     <!-- Focus Area Section -->
 
     <!-- Events Section -->
-    <section class="events-section py-5">
+    <section class="events-section py-5 container-fluid">
         <div class="container py-4">
             <!-- Section Header -->
             <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between mb-5 gap-3">
-                <div>
+                <div data-aos="fade-up" data-aos-duration="500">
                     <h2 class="inter-700 mb-2" style="color: #0d233a; font-size: clamp(1.8rem, 3vw, 2.5rem);">
                         Upcoming Events
                     </h2>
@@ -316,7 +327,8 @@
                     </p>
                 </div>
                 <div class="text-end text-md-start">
-                    <a href="#" class="btn px-4 py-2 inter-600 btn-view-all">
+                    <a href="#" class="btn px-4 py-2 inter-600 btn-view-all" data-aos="fade-zoom-in"
+                        data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                         View All Events
                     </a>
                 </div>
@@ -326,7 +338,7 @@
             <div class="row row-cols-1 row-cols-lg-2 g-4">
     
                 <!-- Event 1: Pakistan Digital Health Summit 2024 -->
-                <div class="col">
+                <div class="col" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
                     <div class="card border-0 rounded-4 overflow-hidden h-100 event-card">
                         <div class="row g-0 h-100">
                             <!-- Image Column with Date Badge -->
@@ -353,12 +365,14 @@
     
                                     <!-- Event Details (Location & Time) -->
                                     <div class="d-flex align-items-center gap-3 text-muted small mb-4">
-                                        <span class="inter-500"><i class="fa-solid fa-location-dot"></i> Islamabad, PK</span>
+                                        <span class="inter-500"><i class="fa-solid fa-location-dot"></i> Islamabad,
+                                            PK</span>
                                         <span class="inter-500"><i class="fa-solid fa-clock"></i> 09:00 AM</span>
                                     </div>
                                 </div>
     
-                                <a href="#" class="event-link text-decoration-none inter-700 d-inline-flex align-items-center"
+                                <a href="#"
+                                    class="event-link text-decoration-none inter-700 d-inline-flex align-items-center"
                                     style="color: #0d3b88;">
                                     Register Now <i class="fa-solid fa-arrow-right ms-2 fs-6"></i>
                                 </a>
@@ -368,7 +382,7 @@
                 </div>
     
                 <!-- Event 2: AI in Diagnostic Imaging Webinar -->
-                <div class="col">
+                <div class="col" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                     <div class="card border-0 rounded-4 overflow-hidden h-100 event-card">
                         <div class="row g-0 h-100">
                             <!-- Image Column with Date Badge -->
@@ -399,7 +413,8 @@
                                     </div>
                                 </div>
     
-                                <a href="#" class="event-link text-decoration-none inter-700 d-inline-flex align-items-center"
+                                <a href="#"
+                                    class="event-link text-decoration-none inter-700 d-inline-flex align-items-center"
                                     style="color: #0d3b88;">
                                     Register Now <i class="fa-solid fa-arrow-right ms-2 fs-6"></i>
                                 </a>
@@ -414,10 +429,10 @@
     <!-- Events Section -->
 
     <!-- Insights Section -->
-    <section class="insights-section py-5 bg-light">
+    <section class="insights-section py-5 bg-light container-fluid">
         <div class="container py-4">
             <!-- Section Header -->
-            <div class="text-center mb-5">
+            <div class="text-center mb-5" data-aos="fade-up" data-aos-duration="500">
                 <h2 class="inter-700 mb-2" style="color: #0d233a; font-size: clamp(1.8rem, 3vw, 2.5rem);">
                     Latest Insights
                 </h2>
@@ -425,40 +440,44 @@
                     Deep dives into the trends shaping healthcare technology in our region.
                 </p>
             </div>
+    
             <!-- Cards Grid Row -->
             <div class="row row-cols-lg-3 row-cols-1 g-4 justify-content-center">
-                <!-- Card 1: Policy (Blue Tag -> Blue Title on Hover) -->
-                <div class="col">
+    
+                <!-- Card 1: Policy -->
+                <div class="col" data-aos="fade-up" data-aos-duration="600" data-aos-delay="100">
                     <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white insight-card">
                         <div class="insight-img-wrapper position-relative">
                             <img src="images/latest-insight-card-1-image.png" alt="The Roadmap to Interoperability in PK"
                                 class="w-100 object-fit-cover" style="height: 200px;">
                         </div>
-                
+    
                         <div class="card-body p-4 d-flex flex-column justify-content-between">
                             <div>
                                 <div class="d-flex align-items-center mb-3">
                                     <span class="badge px-2.5 py-1.5 inter-600 small badge-blue"
                                         style="background-color: #e8f1ff; color: #0d3b88; font-size: 11px;">POLICY</span>
-                                    <span class="small inter-400 ms-3" style="color: #9BA9BC; font-size: 12px;">5 min read</span>
+                                    <span class="small inter-400 ms-3" style="color: #9BA9BC; font-size: 12px;">5 min
+                                        read</span>
                                 </div>
-                
+    
                                 <h4 class="inter-700 mb-2 insight-title">
                                     The Roadmap to Interoperability in PK
                                 </h4>
-                
+    
                                 <p class="text-secondary inter-500 small mb-4" style="line-height: 1.6;">
                                     How we can build a unified health data exchange platform for public and private sectors.
                                 </p>
                             </div>
-                
+    
                             <div class="insight-card-footer d-flex align-items-center justify-content-between pt-3">
                                 <div class="d-flex align-items-center gap-2">
                                     <img src="images/avatar-1.jpg" alt="Dr. Sarah Ahmed" class="rounded-circle border"
                                         style="width: 32px; height: 32px; object-fit: cover;">
                                     <span class="small inter-600 text-dark">Dr. Sarah Ahmed</span>
                                 </div>
-                                <label class="bookmark-btn d-inline-flex align-items-center justify-content-center rounded-3">
+                                <label
+                                    class="bookmark-btn d-inline-flex align-items-center justify-content-center rounded-3">
                                     <input type="checkbox" class="d-none">
                                     <i class="fa-solid fa-bookmark fs-6"></i>
                                 </label>
@@ -466,39 +485,41 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Card 2: Cybersecurity (Green Tag -> Green Title on Hover) -->
-                <div class="col">
+    
+                <!-- Card 2: Cybersecurity -->
+                <div class="col" data-aos="fade-up" data-aos-duration="600" data-aos-delay="200">
                     <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white insight-card">
                         <div class="insight-img-wrapper position-relative">
                             <img src="images/latest-insight-card-2-image.png" alt="Protecting Patient Privacy in 2024"
                                 class="w-100 object-fit-cover" style="height: 200px;">
                         </div>
-                
+    
                         <div class="card-body p-4 d-flex flex-column justify-content-between">
                             <div>
                                 <div class="d-flex align-items-center mb-3">
                                     <span class="badge px-2.5 py-1.5 inter-600 small badge-green"
                                         style="background-color: #F0FDF4; color: #00B050; font-size: 11px;">CYBERSECURITY</span>
-                                    <span class="small inter-400 ms-3" style="color: #9BA9BC; font-size: 12px;">8 min read</span>
+                                    <span class="small inter-400 ms-3" style="color: #9BA9BC; font-size: 12px;">8 min
+                                        read</span>
                                 </div>
-                
+    
                                 <h4 class="inter-700 mb-2 insight-title">
                                     Protecting Patient Privacy in 2024
                                 </h4>
-                
+    
                                 <p class="text-secondary inter-500 small mb-4" style="line-height: 1.6;">
                                     Key strategies for hospital IT managers to defend against rising ransomware attacks.
                                 </p>
                             </div>
-                
+    
                             <div class="insight-card-footer d-flex align-items-center justify-content-between pt-3">
                                 <div class="d-flex align-items-center gap-2">
                                     <img src="images/avatar-2.jpg" alt="Engr. Omar Farooq" class="rounded-circle border"
                                         style="width: 32px; height: 32px; object-fit: cover;">
                                     <span class="small inter-600 text-dark">Engr. Omar Farooq</span>
                                 </div>
-                                <label class="bookmark-btn d-inline-flex align-items-center justify-content-center rounded-3">
+                                <label
+                                    class="bookmark-btn d-inline-flex align-items-center justify-content-center rounded-3">
                                     <input type="checkbox" class="d-none">
                                     <i class="fa-solid fa-bookmark fs-6"></i>
                                 </label>
@@ -506,39 +527,41 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Card 3: Startups (Blue Tag -> Blue Title on Hover) -->
-                <div class="col">
+    
+                <!-- Card 3: Startups -->
+                <div class="col" data-aos="fade-up" data-aos-duration="600" data-aos-delay="300">
                     <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100 bg-white insight-card">
                         <div class="insight-img-wrapper position-relative">
                             <img src="images/latest-insight-card-3-image.png" alt="Scaling HealthTech Startups in Pakistan"
                                 class="w-100 object-fit-cover" style="height: 200px;">
                         </div>
-                
+    
                         <div class="card-body p-4 d-flex flex-column justify-content-between">
                             <div>
                                 <div class="d-flex align-items-center mb-3">
                                     <span class="badge px-2.5 py-1.5 inter-600 small badge-blue"
                                         style="background-color: #e8f1ff; color: #0d3b88; font-size: 11px;">STARTUPS</span>
-                                    <span class="small inter-400 ms-3" style="color: #9BA9BC; font-size: 12px;">12 min read</span>
+                                    <span class="small inter-400 ms-3" style="color: #9BA9BC; font-size: 12px;">12 min
+                                        read</span>
                                 </div>
-                
+    
                                 <h4 class="inter-700 mb-2 insight-title">
                                     Scaling HealthTech Startups in Pakistan
                                 </h4>
-                
+    
                                 <p class="text-secondary inter-500 small mb-4" style="line-height: 1.6;">
                                     An analysis of the current investment landscape and regulatory hurdles for founders.
                                 </p>
                             </div>
-                
+    
                             <div class="insight-card-footer d-flex align-items-center justify-content-between pt-3">
                                 <div class="d-flex align-items-center gap-2">
                                     <img src="images/avatar-3.jpg" alt="Zainab Khan" class="rounded-circle border"
                                         style="width: 32px; height: 32px; object-fit: cover;">
                                     <span class="small inter-600 text-dark">Zainab Khan</span>
                                 </div>
-                                <label class="bookmark-btn d-inline-flex align-items-center justify-content-center rounded-3">
+                                <label
+                                    class="bookmark-btn d-inline-flex align-items-center justify-content-center rounded-3">
                                     <input type="checkbox" class="d-none">
                                     <i class="fa-solid fa-bookmark fs-6"></i>
                                 </label>
@@ -546,6 +569,7 @@
                         </div>
                     </div>
                 </div>
+    
             </div>
         </div>
     </section>
@@ -648,11 +672,11 @@
                 <!-- Brand & Info Column -->
                 <div class="col-lg-4 col-md-6">
                     <!-- Logo & Brand Name -->
-                    <div class="d-flex align-items-center gap-2 mb-3">
+                    <a href="/" class="d-flex align-items-center gap-2 mb-3 text-decoration-none">
                         <img src="images/healthtech-logo.jpg" alt="HealthTech Pakistan Logo" class="rounded-circle"
                             style="width: 52px; height: 52px; object-fit: cover;">
                         <span class="inter-600 fs-5 text-white">HealthTech Pakistan</span>
-                    </div>
+                    </a>
     
                     <!-- Mission Text -->
                     <p class="inter-500 small mb-4" style="max-width: 320px; line-height: 1.6; color: rgba(103, 126, 156);">
@@ -722,7 +746,7 @@
             <div
                 class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 inter-500 small" style="color: #577487;">
                 <div>
-                    © 2024 HealthTech Pakistan. All rights reserved. Powered By
+                    © 2026 HealthTech Pakistan. All rights reserved. Powered By
                     <a href="https://digitechinfra.com" target="_blank" rel="noopener noreferrer"
                         class="digitech-link text-decoration-none inter-600" style="color: #577487;">
                         Digitech Infra
@@ -742,9 +766,19 @@
         </div>
     </footer>
 
+    
+    <script src="scripts.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                    once: true, // Yeh ensure karega ke animation sirf ek hi baar chale
+                    duration: 800,
+                }
+            );
+        </script>
 </body>
 
 </html
