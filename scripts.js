@@ -79,3 +79,84 @@ document.addEventListener("DOMContentLoaded", () => {
     progressObserver.observe(bar);
   });
 });
+
+
+
+// About Page Progress Bar JS
+document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll(
+    ".custom-leadership-pills .nav-link",
+  );
+  const leaderItems = document.querySelectorAll(".leader-item");
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      // Active class shift karein
+      filterButtons.forEach((btn) =>
+        btn.classList.remove("active", "shadow-sm"),
+      );
+      this.classList.add("active", "shadow-sm");
+
+      const targetCategory = this.getAttribute("data-filter");
+
+      // Cards ko filter karein
+      leaderItems.items = leaderItems.forEach((item) => {
+        const itemCategories = item.getAttribute("data-category");
+
+        if (
+          targetCategory === "all" ||
+          itemCategories.includes(targetCategory)
+        ) {
+          item.style.display = "block";
+          setTimeout(() => {
+            item.style.opacity = "1";
+            item.style.transform = "scale(1)";
+          }, 50);
+        } else {
+          item.style.opacity = "0";
+          item.style.transform = "scale(0.95)";
+          setTimeout(() => {
+            item.style.display = "none";
+          }, 200); // Transition matching time
+        }
+      });
+    });
+  });
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const filterButtons = document.querySelectorAll(".tier-tab-btn");
+  const tierCards = document.querySelectorAll(".tier-cards-container > .col");
+
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", function () {
+      // 1. Remove 'active' class from all buttons and add to clicked button
+      filterButtons.forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
+
+      // 2. Get selected filter value
+      const filterValue = this.getAttribute("data-filter");
+
+      // 3. Filter Cards
+      tierCards.forEach((card) => {
+        const category = card.getAttribute("data-category");
+
+        if (filterValue === "all" || category === filterValue) {
+          card.style.display = "block";
+          // Smooth fade-in effect
+          card.style.opacity = "0";
+          card.style.transform = "translateY(10px)";
+          setTimeout(() => {
+            card.style.transition = "opacity 0.3s ease, transform 0.3s ease";
+            card.style.opacity = "1";
+            card.style.transform = "translateY(0)";
+          }, 50);
+        } else {
+          card.style.display = "none";
+        }
+      });
+    });
+  });
+});

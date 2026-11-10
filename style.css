@@ -975,6 +975,7 @@
 
 /* ====================Core Values Section End===========================*/
 
+/* ====================Strategic Pillar Section===========================*/
 .strategic-pillars-section{
     background-color: rgba(247, 249, 251, 1);
 }
@@ -1100,6 +1101,7 @@
     letter-spacing: -0.2px;
 }
 
+/* ====================Strategic Pillar Section End===========================*/
 
 /* ==================== Chronology of Impact Section =========================== */
 .chronology-section {
@@ -1186,9 +1188,9 @@
     color: rgba(0, 108, 73, 1) !important;
 }
 
-.chrono-card:hover .chrono-subtitle {
+/* .chrono-card:hover .chrono-subtitle {
     color: rgba(0, 108, 73, 0.9);
-}
+} */
 
 .chrono-card:hover h4 {
     color: rgba(0, 108, 73, 1) !important;
@@ -1198,6 +1200,7 @@
     background-color: rgba(0, 108, 73, 1);
     color: #ffffff;
 }
+/* ==================== Chronology of Impact Section End =========================== */
 
 
 /* ==================== Endorsements Section =========================== */
@@ -1230,4 +1233,863 @@
     color: rgba(33, 37, 41, 1);
 }
 
+/* ==================== Endorsements Section End =========================== */
 
+
+/* ====================Leadership and Members Page===========================*/
+
+/* Leadership Hero Section */
+.leadership-hero-section {
+  background: rgba(247, 249, 251, 1);
+}
+
+.hero-glow-bg {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(0, 108, 73, 0.12) 0%, rgba(0, 108, 73, 0) 70%);
+  filter: blur(40px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Custom Colors */
+.text-health {
+  color: #0d3b88 !important; /* Deep Blue */
+}
+
+.text-tech {
+  color: #00b050 !important; /* Vivid Green */
+}
+
+/* Badge Pill */
+.badge-pill-custom {
+  background-color: #e2f4ea;
+  color: #00873d;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+}
+
+.dot-indicator {
+  width: 6px;
+  height: 6px;
+  background-color: #00873d;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.uppercase-track {
+  text-transform: uppercase;
+}
+
+/* Typography */
+.leadership-hero-section .hero-title {
+  color: #0d233a;
+  /* line-height: 1.15; */
+  letter-spacing: -1.68px;
+  font-size: clamp(1.8125rem, 1.3304rem + 2.4107vw, 3.5rem);
+  max-width: 900px;
+}
+
+.leadership-hero-section .hero-subtitle {
+  font-size: clamp(0.875rem, 0.8036rem + 0.3571vw, 1.125rem);
+  /* line-height: 29.25px; */
+  color: rgba(69, 70, 77, 1) !important;
+  max-width: 756px;
+}
+
+/* Floating Pill Stat Cards */
+.stat-pill-card {
+  /* border: 1px solid rgba(226, 232, 240, 0.8); */
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 48px;
+  min-height: 80px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 1px 2px 0px rgba(0, 0, 0, 0.05) !important;
+}
+
+.stat-pill-card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.06) !important;
+}
+
+.stat-number {
+  font-size: clamp(1.5rem, 1.2857rem + 1.0714vw, 2.25rem);
+  /* line-height: 1.2; */
+}
+
+.stat-label {
+  font-size: 11px;
+  /* letter-spacing: 0.55px; */
+  color: rgba(69, 70, 77, 1) !important;
+}
+
+/* Leadership Hero Section */
+
+/* Leadership and Excutive Section */
+.leadership-and-executive-section{
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(247, 249, 251, 1);
+}
+/* Glow ko container ke andar perfectly align karna */
+.leadership-glow-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 400px;
+  height: 400px;
+  pointer-events: none;
+  z-index: 1;
+  overflow: visible; /* Cut hone se rokne ke liye */
+}
+
+.leadership-right-glow {
+  position: absolute;
+  top: 2px;
+  right: -80px;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(24, 138, 206, 0.07); /* Figma exact color */
+  border-radius: 50%;
+  filter: blur(80px); /* Figma exact layer blur */
+}
+
+
+
+/* Custom Leadership Filter Pills */
+.custom-leadership-pills .nav-link {
+  background-color: #ffffff;
+  color: #4a5568;
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  font-size: 0.85rem;
+  width: auto !important; /* Stretch hone se rokne ke liye */
+  flex: 0 0 auto !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.custom-leadership-pills .nav-link:hover {
+  background-color: #f8fafc;
+  color: #00b050;
+}
+
+.custom-leadership-pills .nav-link.active {
+  background-color: #00b050 !important;
+  color: #ffffff !important;
+  border-color: #00b050 !important;
+  box-shadow: 0 4px 12px rgba(0, 176, 80, 0.25) !important;
+  width: auto !important;
+  flex: 0 0 auto !important;
+}
+
+/* Card Container Styling */
+.leader-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 20px !important;
+  background-color: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.8) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03) !important;
+}
+
+.leader-card:hover {
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.06) !important;
+}
+
+/* Hover par card ke andar ka role badge change hoga */
+.leader-card:hover .badge {
+  background-color: rgba(24, 138, 206, 0.1) !important;
+  color: rgba(24, 138, 206, 1) !important;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Avatar & Exact Squircle Frame (48px Radius) */
+.leader-card-image {
+  width: 85px;
+  height: 85px;
+  border-radius: 48px !important;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.leader-card-image img {
+  width: 85px !important;
+  height: 85px !important;
+  border-radius: 48px !important;
+  object-fit: cover;
+}
+
+/* Verified Badge Position matching Figma */
+.leader-verified-badge {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #00b050;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  bottom: 2px;
+  right: 2px;
+  z-index: 2; /* Avatar ke bilkul samnay oopar show hoga */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.leader-verified-badge .material-symbols-outlined {
+  font-size: 13px;
+  font-variation-settings:
+    "FILL" 1,
+    "wght" 700,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+/* Organization & Bio Typography */
+.leader-org-info {
+  font-size: 0.8rem;
+  color: #64748b !important;
+}
+
+.leader-bio-text {
+  line-height: 1.65;
+  color: rgba(69, 70, 77, 1) !important;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+}
+
+/* Card Footer Tags Styling */
+.leader-tag-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.4rem 0.85rem;
+  font-size: 0.775rem;
+  background-color: rgba(236, 238, 240, 1) !important;
+  color: rgba(25, 28, 30, 1) !important;
+  border-radius: 50rem;
+  border: 1px solid rgba(226, 232, 240, 0.6);
+  transition: all 0.2s ease;
+}
+
+.leader-tag-badge:hover {
+  background-color: #e2e8f0 !important;
+  color: #0d3b88 !important;
+}
+
+@media (max-width: 575.98px) {
+  .leader-name {
+    font-size: 1.15rem !important;
+  }
+  .leader-role {
+    font-size: 0.825rem !important;
+  }
+  .leader-org-info {
+    font-size: 0.775rem !important;
+    justify-content: center !important;
+  }
+}
+
+/* Share Button Hover */
+.share-btn {
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.share-btn:hover {
+  background-color: #0d3b88 !important;
+  color: #ffffff !important;
+}
+/* Leadership and Excutive Section End */
+
+
+/* Comittee Cards Section */
+/* Clamp Heading Style */
+.working-chairs-title {
+  font-size: clamp(25px, 3vw, 36px);
+  line-height: 1.2;
+}
+
+/* Committee Card Default State */
+.committee-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.committee-card:hover {
+  /* transform: translateY(-4px); */
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Committee Badge Default Style */
+.committee-badge {
+  background-color: rgba(0, 59, 142, 0.1) !important;
+  color: rgba(0, 59, 142, 1) !important;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Committee Badge Hover State */
+.committee-card:hover .committee-badge {
+  background-color: rgba(0, 108, 73, 0.1) !important;
+  color: rgba(0, 176, 80, 1) !important;
+}
+
+/* Footer Arrow Styling & Hover Animation */
+.committee-arrow {
+  color: rgba(0, 108, 73, 1);
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.committee-card:hover .committee-arrow {
+  transform: translateX(4px);
+}
+
+/* Committee Cards Section End */
+
+
+
+/* ==================== Membership Hero Section Styles ==================== */
+
+.membership-hero-section {
+  position: relative;
+  background-color: #f7f9fb;
+  overflow: hidden;
+}
+
+/* Exact Figma Glow Background */
+.membership-hero-section .hero-glow-bg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1200px;
+  height: 350px;
+  background: linear-gradient(135deg, rgba(0, 176, 80, 0.18) 0%, rgba(0, 59, 142, 0.18) 100%);
+  filter: blur(280px);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Content Container Layer */
+.membership-hero-section .membership-hero-container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Custom Pill Badge */
+.membership-hero-section .badge-pill-custom {
+  background-color: rgba(0, 176, 80, 0.08);
+  border: 1px solid rgba(0, 176, 80, 0.2);
+  color: #00873d;
+}
+
+.membership-hero-section .dot-indicator {
+  width: 8px;
+  height: 8px;
+  background-color: #00b050;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Main Heading */
+.membership-hero-section .membership-hero-title {
+  max-width: 900px;
+  font-size: clamp(1.51rem, 1.3304rem + 2.4107vw, 3.5rem);
+  line-height: 1.2;
+}
+
+/* Subtitle */
+.membership-hero-section .membership-hero-subtitle {
+  max-width: 750px;
+  font-size: clamp(0.875rem, 0.8036rem + 0.3571vw, 1.125rem);
+  line-height: 1.6;
+}
+
+/* Membership Action Buttons */
+.membership-hero-section .hero-btn-dark {
+  background-color: rgba(19, 26, 51, 1) !important;
+  color: #ffffff !important;
+  border-radius: 9999px !important;
+  padding: 8px 24px !important;
+  font-size: 14px;
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease;
+}
+
+.membership-hero-section .hero-btn-dark:hover {
+  background-color: #2d3236 !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+.membership-hero-section .hero-btn-light {
+  background-color: rgba(236, 238, 240, 1) !important;
+  color: #191c1e !important;
+  border-radius: 9999px !important;
+  padding: 8px 24px !important;
+  font-size: 14px;
+  border: none !important;
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+  transition: all 0.3s ease;
+}
+
+.membership-hero-section .hero-btn-light:hover {
+  background-color: #e2e6ea !important;
+  transform: translateY(-1px);
+}
+
+/* ==================== Membership Stats Bar Styles ==================== */
+
+.membership-hero-section .membership-stats-bar {
+  max-width: 1100px;
+  border-radius: 32px !important;
+  background-color: #ffffff !important;
+  border: 1px solid rgba(226, 232, 240, 0.8) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05) !important;
+  padding: 24px !important;
+}
+
+/* Stat Icons Color */
+.membership-hero-section .stat-icon {
+  color: rgba(0, 108, 73, 1) !important;
+}
+
+/* Stat Numbers Typography */
+.membership-hero-section .stat-number {
+  font-size: 24px !important;
+  color: rgba(25, 28, 30, 1) !important;
+  line-height: 1.2;
+}
+
+/* Free Access Special Title Styling */
+.membership-hero-section .free-access-title {
+  color: rgba(0, 108, 73, 1) !important;
+  font-size: 22px !important;
+}
+
+/* Stat Labels Typography */
+.membership-hero-section .stat-label-item {
+  font-size: 11px !important;
+  color: rgba(69, 70, 77, 1) !important;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+
+/* Memebership Tier Section  */
+
+/* ==================== Membership Tiers Filter Bar ==================== */
+
+.membership-tier-section{
+  background-color: #F7F9FB;
+}
+
+.tier-filter-bar {
+  background-color: rgba(236, 238, 240, 1);
+  border-radius: 9999px;
+  gap: 4px;
+}
+
+.tier-tab-btn {
+  font-size: 12px !important;
+  color: rgba(69, 70, 77, 1) !important;
+  background-color: transparent;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.tier-tab-btn:hover {
+  color: rgba(19, 26, 51, 1) !important;
+}
+
+/* Active State Tab Styling */
+.tier-tab-btn.active {
+  background-color: rgba(19, 26, 51, 1) !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* ========== Membership Tier Cards ========= */
+
+.tier-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(226, 232, 240, 0.8) !important;
+}
+
+.tier-card:hover {
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+}
+
+.tier-btn-light:hover {
+  background-color: rgba(226, 230, 235, 1) !important;
+}
+
+
+/* ====== Featured Tier Card Styles ======= */
+
+.tier-card-featured {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.tier-card-featured:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2) !important;
+}
+
+.tier-btn-green:hover {
+  background-color: #008f40 !important;
+  color: #ffffff !important;
+}
+
+/* ========== Membership Tier Cards End========= */
+
+
+/* ========== Member Benefits Section ========= */
+
+.member-benefits-section {
+  background-color: rgba(242, 244, 246, 1);
+}
+
+.benefit-sub-title {
+  font-size: 11px;
+  color: rgba(0, 108, 73, 1);
+  letter-spacing: 0.08em;
+}
+
+.benefit-main-heading {
+  font-size: 36px;
+  color: rgba(25, 28, 30, 1);
+}
+
+.benefit-main-desc {
+  font-size: 15px;
+  color: rgba(69, 70, 77, 1);
+  line-height: 1.6;
+}
+
+.benefit-compliance-badge {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(25, 28, 30, 1);
+  font-size: 12px;
+}
+
+/* Card Styling & Focus Hover Pattern */
+.benefit-hover-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.8) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-icon-box {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(236, 238, 240, 0.6);
+  color: rgba(0, 59, 142, 1);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.benefit-icon-box i {
+  transition: color 0.3s ease;
+}
+
+.benefit-card-title {
+  font-size: 18px;
+  color: rgba(25, 28, 30, 1);
+  transition: color 0.2s ease;
+}
+
+.benefit-card-desc {
+  font-size: 13.5px;
+  color: rgba(69, 70, 77, 1);
+  line-height: 1.55;
+}
+
+.benefit-card-link {
+  font-size: 13px;
+  color: rgba(0, 59, 142, 1);
+  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.benefit-card-link i {
+  transition: transform 0.2s ease;
+}
+
+/* Hover Effects matching focus-card style */
+.benefit-hover-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+}
+
+.benefit-hover-card:hover .benefit-icon-box {
+  background-color: rgba(0, 59, 142, 1) !important;
+  color: #ffffff !important;
+}
+
+.benefit-hover-card:hover .benefit-icon-box i {
+  color: #ffffff !important;
+}
+
+.benefit-hover-card:hover .benefit-card-link i{
+  transform: translateX(4px);
+}
+
+/* ========== Member Benefits Section End ========= */
+
+
+
+/* ========== Collaborate With Section Styles ========= */
+
+.collaborate-section {
+  background-color: #F7F9FB;
+}
+
+.collaborate-sub-title {
+  font-size: 11px;
+  color: rgba(0, 176, 80, 1);
+  letter-spacing: 0.08em;
+}
+
+.collaborate-main-heading {
+  font-size: 36px;
+  color: rgba(25, 28, 30, 1);
+}
+
+.collaborate-main-desc {
+  font-size: 15px;
+  color: rgba(69, 70, 77, 1);
+  line-height: 1.6;
+}
+
+/* Collaborator Cards */
+.collaborate-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.8) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collaborate-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+}
+
+.collaborate-name {
+  font-size: 16px;
+  color: rgba(25, 28, 30, 1);
+}
+
+.collaborate-role {
+  font-size: 12px;
+}
+
+.collaborate-org {
+  font-size: 11.5px;
+}
+
+.collaborate-quote {
+  font-size: 13px;
+  color: rgba(69, 70, 77, 1);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.collaborate-badge-light {
+  background-color: rgba(236, 238, 240, 1);
+  color: rgba(69, 70, 77, 1);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 6px 12px;
+}
+
+.collaborate-member-id {
+  font-size: 11px;
+}
+
+/* SIG Banner */
+.collaborate-sig-banner {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ========== Collaborate With Section End ========= */
+
+
+
+/* ========== FAQ Section Styles ========= */
+
+.faq-section {
+  background-color: rgba(242, 244, 246, 1);
+}
+
+.faq-sub-title {
+  font-size: 11px;
+  color: rgba(0, 176, 80, 1);
+  letter-spacing: 0.08em;
+}
+
+.faq-main-heading {
+  font-size: 36px;
+  color: rgba(25, 28, 30, 1);
+}
+
+.faq-main-desc {
+  font-size: 15px;
+  color: rgba(69, 70, 77, 1);
+}
+
+/* Accordion Item Styles */
+.faq-item {
+  border: 1px solid rgba(226, 232, 240, 0.8) !important;
+  background-color: #ffffff !important;
+  transition: all 0.3s ease;
+}
+
+.faq-btn {
+  background-color: #ffffff !important;
+  color: rgba(25, 28, 30, 1) !important;
+  font-size: 16px;
+  padding: 20px 24px;
+  box-shadow: none !important;
+}
+
+.faq-btn:not(.collapsed) {
+  color: rgba(0, 108, 73, 1) !important;
+  background-color: rgba(240, 253, 244, 0.5) !important;
+}
+
+.faq-body {
+  font-size: 14px;
+  color: rgba(69, 70, 77, 1);
+  padding: 0 24px 20px 24px;
+  line-height: 1.6;
+}
+
+/* Custom Accordion Arrow color */
+.faq-btn::after {
+  filter: brightness(0.5);
+}
+
+.faq-btn:not(.collapsed)::after {
+  filter: hue-rotate(80deg);
+}
+
+/* ========== FAQ Section End ========= */
+
+
+/* ========== Fast-Track Onboarding Section Styles ========= */
+
+.onboarding-section {
+  background-color: #f8fafc;
+}
+
+.onboarding-box {
+  border-radius: 32px !important;
+  border-color: rgba(226, 232, 240, 0.8) !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+}
+
+.onboarding-sub-title {
+  font-size: 11px;
+  color: rgba(0, 176, 80, 1);
+  letter-spacing: 0.08em;
+}
+
+.onboarding-main-heading {
+  font-size: 32px;
+  color: rgba(25, 28, 30, 1);
+  line-height: 1.25;
+}
+
+.onboarding-main-desc {
+  font-size: 14px;
+  color: rgba(69, 70, 77, 1);
+  line-height: 1.6;
+}
+
+/* Feature Icons Box */
+.onboarding-icon-box {
+  width: 36px;
+  height: 36px;
+  background-color: rgba(220, 255, 240, 1);
+  color: rgba(0, 108, 73, 1);
+}
+
+.onboarding-feature-title {
+  font-size: 15px;
+  color: rgba(25, 28, 30, 1);
+}
+
+.onboarding-feature-desc {
+  font-size: 13px;
+  color: rgba(69, 70, 77, 1);
+  line-height: 1.5;
+}
+
+.onboarding-link {
+  font-size: 13px;
+  color: rgba(0, 108, 73, 1);
+  transition: opacity 0.2s ease;
+}
+
+.onboarding-link:hover {
+  opacity: 0.8;
+  color: rgba(0, 108, 73, 1);
+}
+
+/* Right Form Panel */
+.onboarding-form-card {
+  background-color: rgba(245, 247, 249, 1);
+  border-radius: 20px;
+}
+
+.onboarding-label {
+  font-size: 10.5px;
+  color: rgba(69, 70, 77, 1);
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+
+.onboarding-input {
+  font-size: 13px;
+  color: rgba(25, 28, 30, 1);
+  background-color: #ffffff !important;
+  border: 1px solid rgba(226, 232, 240, 1) !important;
+  border-radius: 10px !important;
+  padding: 10px 14px;
+  box-shadow: none !important;
+  transition: border-color 0.2s ease;
+}
+
+.onboarding-input:focus {
+  border-color: rgba(0, 176, 80, 1) !important;
+}
+
+.onboarding-input::placeholder {
+  color: rgba(160, 174, 192, 1);
+}
+
+.onboarding-checkbox-label {
+  font-size: 12px;
+  color: rgba(69, 70, 77, 1);
+}
+
+/* Submit Button */
+.onboarding-submit-btn {
+  background-color: rgba(0, 108, 73, 1) !important;
+  color: #ffffff !important;
+  border-radius: 9999px !important;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.onboarding-submit-btn:hover {
+  background-color: rgba(0, 85, 57, 1) !important;
+}
+
+.onboarding-disclaimer {
+  font-size: 11px;
+  color: rgba(100, 116, 139, 1);
+}
+
+/* ========== Fast-Track Onboarding Section End ========= */
