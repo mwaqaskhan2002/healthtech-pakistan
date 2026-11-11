@@ -1379,7 +1379,7 @@
   background-color: #00b050 !important;
   color: #ffffff !important;
   border-color: #00b050 !important;
-  box-shadow: 0 4px 12px rgba(0, 176, 80, 0.25) !important;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05) !important;
   width: auto !important;
   flex: 0 0 auto !important;
 }
@@ -1554,15 +1554,17 @@
 
 /* Exact Figma Glow Background */
 .membership-hero-section .hero-glow-bg {
+  --glow-opacity: 0.18;              /* Figma layer opacity yahan daalo */
   position: absolute;
-  top: 0;
+  top: -180px;                       /* orb ka upar wala hissa section se bahar, Figma position ke hisab se adjust karo */
   left: 50%;
   transform: translateX(-50%);
-  width: 100%;
-  max-width: 1200px;
-  height: 350px;
-  background: linear-gradient(135deg, rgba(0, 176, 80, 0.18) 0%, rgba(0, 59, 142, 0.18) 100%);
-  filter: blur(280px);
+  width: 980px;
+  height: 480px;
+  border-radius: 9999px;
+  background: linear-gradient(135deg, rgba(0, 176, 80, 1) 0%, rgba(0, 59, 142, 1) 100%);
+  opacity: var(--glow-opacity);
+  filter: blur(140px);               /* Figma 280 ≈ CSS 140 */
   z-index: 1;
   pointer-events: none;
 }
@@ -1575,17 +1577,43 @@
 
 /* Custom Pill Badge */
 .membership-hero-section .badge-pill-custom {
-  background-color: rgba(0, 176, 80, 0.08);
-  border: 1px solid rgba(0, 176, 80, 0.2);
-  color: #00873d;
+  gap: clamp(6px, 1.8vw, 10px);
+  max-width: 100%;
+  padding: clamp(5px, 1.4vw, 6px) clamp(12px, 3vw, 16px);
+  background-color: #fff;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 9999px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
-.membership-hero-section .dot-indicator {
-  width: 8px;
-  height: 8px;
-  background-color: #00b050;
+.membership-hero-section .badge-pill-title {
+  font-size: clamp(10px, 2.8vw, 12px);
+  line-height: 1.3;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: rgba(25, 28, 30, 1);
+}
+
+.membership-hero-section .dot-indicator{
+  width: 10px;
+  height: 10px;
+  background-color: #00873d;
   border-radius: 50%;
   display: inline-block;
+}
+
+.membership-hero-section .badge-pill-sep {
+  width: 4px;
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: rgba(198, 198, 205, 1);
+}
+
+.membership-hero-section .badge-pill-sub {
+  font-size: clamp(10px, 2.8vw, 12px);
+  line-height: 1.3;
+  color: rgba(69, 70, 77, 1);
 }
 
 /* Main Heading */
@@ -1609,14 +1637,13 @@
   border-radius: 9999px !important;
   padding: 8px 24px !important;
   font-size: 14px;
-  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
   transition: all 0.3s ease;
 }
 
 .membership-hero-section .hero-btn-dark:hover {
   background-color: #2d3236 !important;
   color: #ffffff !important;
-  transform: translateY(-1px);
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
 }
 
 .membership-hero-section .hero-btn-light {
@@ -1626,13 +1653,12 @@
   padding: 8px 24px !important;
   font-size: 14px;
   border: none !important;
-  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
   transition: all 0.3s ease;
 }
 
 .membership-hero-section .hero-btn-light:hover {
   background-color: #e2e6ea !important;
-  transform: translateY(-1px);
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
 }
 
 /* ==================== Membership Stats Bar Styles ==================== */
