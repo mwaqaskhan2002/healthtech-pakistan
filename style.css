@@ -1913,12 +1913,12 @@
 
 .collaborate-sub-title {
   font-size: 11px;
-  color: rgba(0, 176, 80, 1);
-  letter-spacing: 0.08em;
+  color: rgba(0, 108, 73, 1);
+  letter-spacing: 1.1px;
 }
 
 .collaborate-main-heading {
-  font-size: 36px;
+  font-size: clamp(1.5rem, 1.2857rem + 1.0714vw, 2.25rem);
   color: rgba(25, 28, 30, 1);
 }
 
@@ -2090,12 +2090,12 @@
 
 .faq-sub-title {
   font-size: 11px;
-  color: rgba(0, 176, 80, 1);
-  letter-spacing: 0.08em;
+  color: rgba(0, 108, 73, 1);
+  letter-spacing: 1.1px;
 }
 
 .faq-main-heading {
-  font-size: 36px;
+  font-size: clamp(1.5rem, 1.2857rem + 1.0714vw, 2.25rem);
   color: rgba(25, 28, 30, 1);
 }
 
@@ -2104,18 +2104,29 @@
   color: rgba(69, 70, 77, 1);
 }
 
-/* Accordion Item Styles */
+/* FAQ Accordion */
+.faq-accordion {
+  --bs-accordion-border-radius: 0;
+  --bs-accordion-inner-border-radius: 0;
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2345464d' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23006c49' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  --bs-accordion-btn-icon-width: 1.25rem;
+}
+
 .faq-item {
-  border: 1px solid rgba(226, 232, 240, 0.8) !important;
-  background-color: #ffffff !important;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  border-radius: 0;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
 
 .faq-btn {
-  background-color: #ffffff !important;
+  background-color: #fff !important;
   color: rgba(25, 28, 30, 1) !important;
-  font-size: 16px;
-  padding: 20px 24px;
+  font-size: clamp(14px, 3.8vw, 18px);
+  padding: 16px;
+  border-radius: 0 !important;
   box-shadow: none !important;
 }
 
@@ -2125,21 +2136,11 @@
 }
 
 .faq-body {
-  font-size: 14px;
+  font-size: clamp(13px, 3.4vw, 14px);
   color: rgba(69, 70, 77, 1);
-  padding: 0 24px 20px 24px;
+  padding: 16px;
   line-height: 1.6;
 }
-
-/* Custom Accordion Arrow color */
-.faq-btn::after {
-  filter: brightness(0.5);
-}
-
-.faq-btn:not(.collapsed)::after {
-  filter: hue-rotate(80deg);
-}
-
 /* ========== FAQ Section End ========= */
 
 
@@ -2151,20 +2152,19 @@
 
 .onboarding-box {
   border-radius: 32px !important;
-  border-color: rgba(226, 232, 240, 0.8) !important;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 8px 10px -6px rgba(0, 0, 0, 0.1), 0 20px 25px -5px rgba(0, 0, 0, 0.1) !important;
 }
 
 .onboarding-sub-title {
   font-size: 11px;
-  color: rgba(0, 176, 80, 1);
-  letter-spacing: 0.08em;
+  color: rgba(0, 108, 73, 1);
+  letter-spacing: 1.1px;
 }
 
 .onboarding-main-heading {
-  font-size: 32px;
+  font-size: clamp(1.5rem, 1.2857rem + 1.0714vw, 2.25rem);
   color: rgba(25, 28, 30, 1);
-  line-height: 1.25;
+  letter-spacing: -0.72px;
 }
 
 .onboarding-main-desc {
@@ -2177,8 +2177,8 @@
 .onboarding-icon-box {
   width: 36px;
   height: 36px;
-  background-color: rgba(220, 255, 240, 1);
-  color: rgba(0, 108, 73, 1);
+  background-color: rgba(108, 248, 187, 1);
+  color: rgba(0, 113, 77, 1);
 }
 
 .onboarding-feature-title {
@@ -2205,8 +2205,8 @@
 
 /* Right Form Panel */
 .onboarding-form-card {
-  background-color: rgba(245, 247, 249, 1);
-  border-radius: 20px;
+  background-color: rgba(242, 244, 246, 1);
+  /* border-radius: 20px; */
 }
 
 .onboarding-label {
@@ -2217,36 +2217,72 @@
 }
 
 .onboarding-input {
-  font-size: 13px;
+  font-size: 13px !important;
   color: rgba(25, 28, 30, 1);
   background-color: #ffffff !important;
   border: 1px solid rgba(226, 232, 240, 1) !important;
-  border-radius: 10px !important;
+  border-radius: 0px !important;
   padding: 10px 14px;
   box-shadow: none !important;
   transition: border-color 0.2s ease;
 }
 
+/* Specifically target select dropdown text options */
+.form-select.onboarding-input {
+  font-size: 13px !important;
+  background-color: #ffffff !important;
+  color: rgba(25, 28, 30, 1);
+  accent-color: rgba(0, 108, 73, 1);
+}
+
+
+.form-select.onboarding-input option {
+  font-size: 13px;
+  background-color: #ffffff;
+  color: rgba(25, 28, 30, 1);
+  padding: 10px;
+}
+
+/* For Webkit browsers (Chrome, Safari, Edge) dropdown options styling */
+.form-select.onboarding-input option {
+  background-color: #ffffff;
+  color: rgba(25, 28, 30, 1);
+  padding: 12px 14px;
+}
+
+/* Jab option hover ya selected ho */
+.form-select.onboarding-input option:checked,
+.form-select.onboarding-input option:hover {
+  background-color: rgba(220, 255, 240, 1) !important;
+  color: rgba(0, 108, 73, 1) !important;
+}
+
 .onboarding-input:focus {
   border-color: rgba(0, 176, 80, 1) !important;
+  box-shadow: 0 0 0 3px rgba(0, 176, 80, 0.1) !important;
 }
 
 .onboarding-input::placeholder {
-  color: rgba(160, 174, 192, 1);
+  color: rgba(156, 163, 175, 1);
+  font-size: 13px;
 }
 
 .onboarding-checkbox-label {
-  font-size: 12px;
+  font-size: 11px;
   color: rgba(69, 70, 77, 1);
 }
+
+
 
 /* Submit Button */
 .onboarding-submit-btn {
   background-color: rgba(0, 108, 73, 1) !important;
   color: #ffffff !important;
   border-radius: 9999px !important;
-  font-size: 14px;
-  transition: background-color 0.3s ease;
+  font-size: 13px;
+  letter-spacing: 0.24px;
+  box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .onboarding-submit-btn:hover {
