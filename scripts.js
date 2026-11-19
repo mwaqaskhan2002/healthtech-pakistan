@@ -1,4 +1,3 @@
-
 // About Page Stat Cards Counter
 
 // document.addEventListener("DOMContentLoaded", () => {
@@ -49,10 +48,7 @@
 //   });
 // });
 
-
 new PureCounter();
-
-
 
 // About Page Progress Bar JS
 document.addEventListener("DOMContentLoaded", () => {
@@ -79,8 +75,6 @@ document.addEventListener("DOMContentLoaded", () => {
     progressObserver.observe(bar);
   });
 });
-
-
 
 // About Page Progress Bar JS
 document.addEventListener("DOMContentLoaded", function () {
@@ -124,8 +118,6 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-
-
 document.addEventListener("DOMContentLoaded", function () {
   const filterButtons = document.querySelectorAll(".tier-tab-btn");
   const tierCards = document.querySelectorAll(".tier-cards-container > .col");
@@ -157,6 +149,53 @@ document.addEventListener("DOMContentLoaded", function () {
           card.style.display = "none";
         }
       });
+    });
+  });
+});
+
+
+// Event Pages Javascript
+// Active Pill Toggle JS (Events Page)
+document.querySelectorAll(".events-focus-pill").forEach((pill) => {
+  pill.addEventListener("click", () => {
+    document
+      .querySelectorAll(".events-focus-pill")
+      .forEach((item) => item.classList.remove("is-active"));
+    pill.classList.add("is-active");
+  });
+});
+
+// Event Calander Section
+const gridBtn = document.getElementById("calendarGridViewBtn");
+const listBtn = document.getElementById("calendarListViewBtn");
+const calendarGrid = document.getElementById("eventsCalendarGrid");
+const quarterBtns = document.querySelectorAll(".calendar-quarter-btn");
+const calendarCols = document.querySelectorAll(".event-calendar-col");
+
+if (gridBtn && listBtn && calendarGrid) {
+  gridBtn.addEventListener("click", () => {
+    calendarGrid.classList.remove("events-calendar-grid--list");
+    gridBtn.classList.add("is-active");
+    listBtn.classList.remove("is-active");
+  });
+
+  listBtn.addEventListener("click", () => {
+    calendarGrid.classList.add("events-calendar-grid--list");
+    listBtn.classList.add("is-active");
+    gridBtn.classList.remove("is-active");
+  });
+}
+
+quarterBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    quarterBtns.forEach((b) => b.classList.remove("is-active"));
+    btn.classList.add("is-active");
+
+    const selectedQuarter = btn.dataset.quarter;
+    calendarCols.forEach((col) => {
+      const match =
+        selectedQuarter === "all" || col.dataset.quarter === selectedQuarter;
+      col.classList.toggle("d-none", !match);
     });
   });
 });

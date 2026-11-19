@@ -1,0 +1,1493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | HealthTech Pakistan</title>
+    <link rel="shortcut icon" href="images/health-tech-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Caveat:wght@400..700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display&family=Geist:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Moon+Dance&family=Noto+Sans+Mono:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Outfit:wght@100..900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+HU&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&family=Sora:wght@100..800&family=Space+Grotesk:wght@300..700&family=Syncopate:wght@400;700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
+</head>
+
+<body class="events-page">
+
+    <!-- Main Navbar -->
+    <nav class="main-navbar navbar navbar-expand-lg py-2 sticky-top shadow-sm">
+        <div class="container-lg">
+            <!-- Brand / Logo -->
+            <a class="navbar-brand d-flex align-items-center gap-3 text-decoration-none" href="/">
+                <img src="images/healthtech-logo.jpg" alt="HealthTech Pakistan Logo" class="rounded-circle"
+                    style="width: 52px; height: 52px; object-fit: cover;">
+                <div class="d-flex flex-column">
+                    <span class="inter-700 fs-3 lh-1">
+                        <span style="color: #0d3b88; letter-spacing: -1px;">Health</span><span
+                            style="color: #00B050; letter-spacing: -1px;">Tech</span>
+                    </span>
+                    <span class="inter-600 text-uppercase tracking-wider"
+                        style="color: #64748b; font-size: 11px; letter-spacing: 5px;">
+                        Pakistan
+                    </span>
+                </div>
+            </a>
+    
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler border-0 shadow-none p-2" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars fs-4" style="color: #0d3b88;"></i>
+            </button>
+    
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                        <img src="images/healthtech-logo.jpg" alt="HealthTech Pakistan Logo" class="rounded-circle"
+                            style="width: 52px; height: 52px; object-fit: cover;">
+                    </h5>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+                    <button type="button" class="btn-close shadow-none border-0" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body align-items-center">
+                    <!-- Nav Links -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-lg-items-center">
+                        <li class="nav-item px-2 mb-2 mb-lg-0">
+                            <a class="nav-link inter-500" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item px-2 mb-2 mb-lg-0">
+                            <a class="nav-link inter-500"
+                                href="leadership-and-team.html">Leadership & Team</a>
+                        </li>
+                        <li class="nav-item px-2 mb-2 mb-lg-0">
+                            <a class="nav-link inter-500" href="membership.html">Membership</a>
+                        </li>
+                        <li class="nav-item px-2 mb-2 mb-lg-0">
+                            <a class="nav-link inter-500 active" aria-current="page" href="events.html">Events</a>
+                        </li>
+                        <li class="nav-item px-2 mb-2 mb-lg-0">
+                            <a class="nav-link inter-500" href="#">Insights</a>
+                        </li>
+                        <li class="nav-item px-2 mb-2 mb-lg-0">
+                            <a class="nav-link inter-500" href="#">Forum</a>
+                        </li>
+                    </ul>
+    
+                    <!-- Join Community Button -->
+                    <div class="join-community-btn ms-lg-3 mt-3 mt-lg-0">
+                        <button type="button" class="btn btn-join-community rounded-pill p-0">
+                            <a href="#" class="d-block inter-600 text-decoration-none px-4 py-2">
+                                Join Community
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Main Navbar -->
+
+    <main>
+        <!-- Events Hero Section -->
+        <section class="events-hero-section position-relative overflow-hidden py-5">
+            <!-- Ambient Corner Glows -->
+            <div class="events-glow-top-right position-absolute rounded-circle"></div>
+            <div class="events-glow-bottom-left position-absolute rounded-circle"></div>
+        
+            <div class="container position-relative z-1 py-3 py-lg-4">
+                <div class="row align-items-center g-4">
+                    <!-- Left Column: Badge, Title & Subtitle -->
+                    <div class="col-lg-8" data-aos="fade-up" data-aos-duration="700">
+                        <!-- Badge + Side Label -->
+                        <div class="d-flex flex-wrap align-items-center gap-2 gap-md-3 mb-3" data-aos="fade-down"
+                            data-aos-delay="50">
+                            <div
+                                class="events-hero-badge d-inline-flex flex-wrap align-items-center gap-1 gap-sm-2 px-3 py-2 py-sm-1 plus-jakarta-sans-700">
+                                <div class="d-inline-flex align-items-center gap-2">
+                                    <span class="events-dot-primary rounded-circle flex-shrink-0" aria-hidden="true"></span>
+                                    <p class="mb-0 text-nowrap">ANNUAL CALENDAR 2024–2025</p>
+                                </div>
+            
+                                <ul class="list-unstyled d-inline-flex flex-wrap align-items-center gap-1 gap-sm-2 mb-0">
+                                    <li class="d-inline-flex align-items-center gap-1 gap-sm-2">
+                                        <span class="events-dot-divider d-inline-flex align-items-center justify-content-center"
+                                            aria-hidden="true">•</span>
+                                        <span>CONVENE</span>
+                                    </li>
+                                    <li class="d-inline-flex align-items-center gap-1 gap-sm-2">
+                                        <span class="events-dot-sub d-inline-flex align-items-center justify-content-center"
+                                            aria-hidden="true">•</span>
+                                        <span>INNOVATE</span>
+                                    </li>
+                                    <li class="d-inline-flex align-items-center gap-1 gap-sm-2">
+                                        <span class="events-dot-sub d-inline-flex align-items-center justify-content-center"
+                                            aria-hidden="true">•</span>
+                                        <span>TRANSFORM</span>
+                                    </li>
+                                </ul>
+                            </div>
+            
+                            <p class="events-hero-side-label plus-jakarta-sans-700 mb-0">
+                                National Health Innovation Exchange
+                            </p>
+                        </div>
+            
+                        <!-- Main Heading -->
+                        <h1 class="events-hero-title plus-jakarta-sans-800 mb-3" data-aos="fade-up" data-aos-delay="120">
+                            Where Pakistan's Healthcare &amp; Technology Pioneers
+                            <span class="events-hero-highlight">Convene</span>.
+                        </h1>
+            
+                        <!-- Subtitle -->
+                        <p class="events-hero-subtitle inter-400 mb-0" data-aos="fade-up" data-aos-delay="200">
+                            From our flagship national Digital Health Summit in Islamabad to provincial clinician-engineer
+                            mixers, DRAP regulatory clinics, and telemedicine hackathons across Karachi, Lahore, and Peshawar.
+                        </p>
+                    </div>
+            
+                    <!-- Right Column: Status & Format Cards -->
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column gap-3">
+                            <!-- Card 1: PMDC & CME Certified -->
+                            <div class="events-info-card d-flex align-items-center justify-content-between gap-3 p-3">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div
+                                        class="events-info-icon events-info-icon--cme rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                        <span class="material-symbols-outlined" style="font-size: 20px;">verified</span>
+                                    </div>
+                                    <div>
+                                        <div class="events-info-title plus-jakarta-sans-700">PMDC &amp; CME Certified</div>
+                                        <div class="events-info-desc inter-400">Continuous Medical Education</div>
+                                    </div>
+                                </div>
+                                <span class="events-valid-pill plus-jakarta-sans-600 rounded-pill px-2 py-1 flex-shrink-0">
+                                    Valid
+                                </span>
+                            </div>
+            
+                            <!-- Card 2: Hybrid Formats -->
+                            <div class="events-info-card d-flex align-items-center justify-content-between gap-3 p-3">
+                                <div class="d-flex align-items-center gap-3">
+                                    <div
+                                        class="events-info-icon events-info-icon--hybrid rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                        <span class="material-symbols-outlined" style="font-size: 20px;">hub</span>
+                                    </div>
+                                    <div>
+                                        <div class="events-info-title plus-jakarta-sans-700">Hybrid Formats</div>
+                                        <div class="events-info-desc inter-400">Simultaneous Livestreams</div>
+                                    </div>
+                                </div>
+                                <span class="events-hybrid-label plus-jakarta-sans-700 flex-shrink-0">
+                                    Zoom + In-Person
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Search & Multifacet Filter Console -->
+                <div class="row mt-4 mt-lg-5" data-aos="fade-up" data-aos-delay="250" data-aos-duration="700">
+                    <div class="col-12">
+                        <div class="search-multifacet-filter-console p-3">
+                            <!-- Top Row: Search + Category + Location -->
+                            <div class="row g-2 g-md-3 align-items-center">
+                                <!-- Search Input -->
+                                <div class="col-12 col-lg-5">
+                                    <div class="events-filter-control d-flex align-items-center gap-2 px-3 rounded-pill bg-white">
+                                        <span class="material-symbols-outlined events-filter-icon flex-shrink-0"
+                                            aria-hidden="true">search</span>
+                                        <input type="search" id="eventSearchInput"
+                                            class="form-control border-0 bg-transparent shadow-none px-0 inter-400 events-filter-field"
+                                            placeholder="Search by keynote, topic, clinical specialty, or DRAP tag..."
+                                            aria-label="Search by keynote, topic, clinical specialty, or DRAP tag">
+                                    </div>
+                                </div>
+            
+                                <!-- Event Categories Select -->
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="events-filter-control d-flex align-items-center gap-2 px-3 rounded-pill bg-white">
+                                        <span class="material-symbols-outlined events-filter-icon flex-shrink-0"
+                                            aria-hidden="true">category</span>
+                                        <select id="eventCategorySelect"
+                                            class="form-select border-0 bg-transparent shadow-none ps-0 pe-3 inter-400 events-filter-field"
+                                            aria-label="All Event Categories">
+                                            <option value="all" selected>All Event Categories (12)</option>
+                                            <option value="summit">Digital Health Summits</option>
+                                            <option value="regulatory">DRAP Regulatory Clinics</option>
+                                            <option value="hackathon">Telemedicine Hackathons</option>
+                                            <option value="mixer">Clinician-Engineer Mixers</option>
+                                        </select>
+                                    </div>
+                                </div>
+            
+                                <!-- Locations Select -->
+                                <div class="col-12 col-md-6 col-lg-3">
+                                    <div class="events-filter-control d-flex align-items-center gap-2 px-3 rounded-pill bg-white">
+                                        <span class="material-symbols-outlined events-filter-icon flex-shrink-0"
+                                            aria-hidden="true">location_on</span>
+                                        <select id="eventLocationSelect"
+                                            class="form-select border-0 bg-transparent shadow-none ps-0 pe-3 inter-400 events-filter-field"
+                                            aria-label="All Locations">
+                                            <option value="all" selected>All Locations</option>
+                                            <option value="islamabad">Islamabad</option>
+                                            <option value="karachi">Karachi</option>
+                                            <option value="lahore">Lahore</option>
+                                            <option value="peshawar">Peshawar</option>
+                                            <option value="hybrid">Hybrid / Online</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Bottom Row: Quick Focus Pills -->
+                            <div class="d-flex flex-wrap align-items-center gap-2 mt-3 pt-1">
+                                <span class="events-quick-focus-label plus-jakarta-sans-700 me-1">QUICK FOCUS:</span>
+            
+                                <button type="button" class="events-focus-pill plus-jakarta-sans-600 is-active" data-track="all">
+                                    All Tracks
+                                </button>
+                                <button type="button" class="events-focus-pill plus-jakarta-sans-600" data-track="radiology-ai">
+                                    Radiology AI
+                                </button>
+                                <button type="button" class="events-focus-pill plus-jakarta-sans-600" data-track="fhir-ehr">
+                                    FHIR &amp; EHR Testbeds
+                                </button>
+                                <button type="button" class="events-focus-pill plus-jakarta-sans-600" data-track="drap-samd">
+                                    DRAP SaMD Guidance
+                                </button>
+                                <button type="button" class="events-focus-pill plus-jakarta-sans-600" data-track="rural-tele-icu">
+                                    Rural Tele-ICU
+                                </button>
+                                <button type="button" class="events-focus-pill plus-jakarta-sans-600" data-track="vc-pitch-day">
+                                    VC Pitch Day
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Events Hero Stats Counter Row -->
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 mt-4">
+                    <!-- Stat 1: 12+ -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="100" data-aos-duration="600">
+                        <div class="events-stat-card h-100 p-4">
+                            <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
+                                <div class="events-stat-number plus-jakarta-sans-800">
+                                    <span class="purecounter" data-purecounter-start="0" data-purecounter-end="12"
+                                        data-purecounter-duration="1">12</span>+
+                                </div>
+                                <span class="material-symbols-outlined events-stat-icon flex-shrink-0"
+                                    aria-hidden="true">calendar_month</span>
+                            </div>
+                            <h3 class="events-stat-title plus-jakarta-sans-700 mb-1">Annual Flagship Gatherings</h3>
+                            <p class="events-stat-desc inter-400 mb-0">Scheduled for FY 24–25</p>
+                        </div>
+                    </div>
+            
+                    <!-- Stat 2: 3,500+ -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
+                        <div class="events-stat-card h-100 p-4">
+                            <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
+                                <div class="events-stat-number plus-jakarta-sans-800">
+                                    <span class="purecounter" data-purecounter-start="0" data-purecounter-end="3500"
+                                        data-purecounter-separator="true" data-purecounter-duration="1.5">3,500</span>+
+                                </div>
+                                <span class="material-symbols-outlined events-stat-icon flex-shrink-0"
+                                    aria-hidden="true">groups</span>
+                            </div>
+                            <h3 class="events-stat-title plus-jakarta-sans-700 mb-1">Healthcare Practitioners</h3>
+                            <p class="events-stat-desc inter-400 mb-0">Active attendees across Pakistan</p>
+                        </div>
+                    </div>
+            
+                    <!-- Stat 3: 80+ -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
+                        <div class="events-stat-card h-100 p-4">
+                            <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
+                                <div class="events-stat-number plus-jakarta-sans-800">
+                                    <span class="purecounter" data-purecounter-start="0" data-purecounter-end="80"
+                                        data-purecounter-duration="1">80</span>+
+                                </div>
+                                <span class="material-symbols-outlined events-stat-icon flex-shrink-0"
+                                    aria-hidden="true">record_voice_over</span>
+                            </div>
+                            <h3 class="events-stat-title plus-jakarta-sans-700 mb-1">Keynote Clinicians &amp; Leads</h3>
+                            <p class="events-stat-desc inter-400 mb-0">AKU, SKMCH, NUST &amp; Global Faculty</p>
+                        </div>
+                    </div>
+            
+                    <!-- Stat 4: 5M+ -->
+                    <div class="col" data-aos="fade-up" data-aos-delay="400" data-aos-duration="600">
+                        <div class="events-stat-card h-100 p-4">
+                            <div class="d-flex align-items-start justify-content-between gap-2 mb-2">
+                                <div class="events-stat-number plus-jakarta-sans-800">
+                                    <span class="purecounter" data-purecounter-start="0" data-purecounter-end="5"
+                                        data-purecounter-duration="1">5</span>M+
+                                </div>
+                                <span class="material-symbols-outlined events-stat-icon flex-shrink-0"
+                                    aria-hidden="true">payments</span>
+                            </div>
+                            <h3 class="events-stat-title plus-jakarta-sans-700 mb-1">PKR Grants Distributed</h3>
+                            <p class="events-stat-desc inter-400 mb-0">Seed equity-free medtech prize</p>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+
+        </section>
+
+
+        <!-- Section: Featured Flagship Showcase Hero Card -->
+        <section class="section-featured-flagship-showcase-hero-card-section container-fluid py-5">
+            <div class="container py-2 py-lg-3">
+                <!-- Section Top Header -->
+                <div class="d-flex flex-column flex-md-row align-items-start align-items-md-end justify-content-between gap-2 mb-4"
+                    data-aos="fade-up" data-aos-duration="600">
+                    <div>
+                        <p class="flagship-eyebrow plus-jakarta-sans-700 text-uppercase mb-1">
+                            SPOTLIGHT PREMIER CONVENTION
+                        </p>
+                        <h2 class="flagship-section-heading plus-jakarta-sans-800 mb-0">
+                            National Convention 2025
+                        </h2>
+                    </div>
+        
+                    <div class="d-inline-flex align-items-center gap-2 flagship-reg-status inter-500">
+                        <span class="flagship-live-dot rounded-circle flex-shrink-0" aria-hidden="true"></span>
+                        <span>Early Bird Registration Open (420 Seats Reserved)</span>
+                    </div>
+                </div>
+        
+                <!-- Dark Flagship Showcase Card -->
+                <div class="flagship-showcase-card position-relative overflow-hidden p-4" data-aos="fade-up"
+                    data-aos-delay="100" data-aos-duration="700">
+                    <!-- Subtle Ambient Glow inside Dark Card -->
+                    <div class="flagship-card-glow position-absolute rounded-circle"></div>
+        
+                    <div class="row g-4 g-xl-5 align-items-stretch position-relative z-1">
+                        <!-- Left Column: Details, Tracks, Date/Location & CTAs -->
+                        <div class="col-lg-7 d-flex flex-column justify-content-between">
+                            <div>
+                                <!-- Top Badges Row -->
+                                <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+                                    <span
+                                        class="flagship-pill flagship-pill--emerald plus-jakarta-sans-700 rounded-pill px-3 py-1">
+                                        NATIONAL FLAGSHIP 2025
+                                    </span>
+                                    <span
+                                        class="flagship-pill flagship-pill--slate plus-jakarta-sans-600 rounded-pill px-3 py-1">
+                                        CME: 6 Category-1 Credit Hours
+                                    </span>
+                                    <span
+                                        class="flagship-pill flagship-pill--teal plus-jakarta-sans-600 rounded-pill px-3 py-1">
+                                        Hybrid: Islamabad &amp; Virtual
+                                    </span>
+                                </div>
+        
+                                <!-- Main Summit Title -->
+                                <h3 class="flagship-card-title plus-jakarta-sans-800 mb-2">
+                                    Pakistan Digital Health Summit 2025
+                                </h3>
+        
+                                <!-- Mint Subheadline -->
+                                <p class="flagship-card-tagline plus-jakarta-sans-600 mb-3">
+                                    Architecting Sovereign Interoperability, Clinical AI Safety &amp; Primary Care
+                                    Tele-Infrastructure
+                                </p>
+        
+                                <!-- Description Paragraph -->
+                                <p class="flagship-card-desc inter-400 mb-4">
+                                    Bringing together 800+ tertiary hospital CEOs, clinical informatics leads, software
+                                    engineers,
+                                    venture partners, and DRAP commissioners to inaugurate the national Fast Healthcare
+                                    Interoperability Resources (FHIR) core standard baseline and clinical AI safety charter.
+                                </p>
+        
+                                <!-- Featured Symposia Tracks -->
+                                <div class="mb-4">
+                                    <p class="flagship-tracks-label plus-jakarta-sans-700 text-uppercase mb-2">
+                                        FEATURED SYMPOSIA TRACKS:
+                                    </p>
+                                    <div class="row row-cols-1 row-cols-sm-2 g-2">
+                                        <div class="col">
+                                            <div
+                                                class="flagship-track-item d-flex align-items-center gap-2 px-3 py-2">
+                                                <span class="material-symbols-outlined flagship-track-icon flex-shrink-0"
+                                                    aria-hidden="true">radiology</span>
+                                                <span class="inter-500">Clinical AI in Diagnostic Imaging</span>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div
+                                                class="flagship-track-item d-flex align-items-center gap-2 px-3 py-2">
+                                                <span class="material-symbols-outlined flagship-track-icon flex-shrink-0"
+                                                    aria-hidden="true">database</span>
+                                                <span class="inter-500">EMR Interoperability &amp; FHIR PK Core</span>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div
+                                                class="flagship-track-item d-flex align-items-center gap-2 px-3 py-2">
+                                                <span class="material-symbols-outlined flagship-track-icon flex-shrink-0"
+                                                    aria-hidden="true">policy</span>
+                                                <span class="inter-500">DRAP SaMD Regulatory Sandbox</span>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div
+                                                class="flagship-track-item d-flex align-items-center gap-2 px-3 py-2">
+                                                <span class="material-symbols-outlined flagship-track-icon flex-shrink-0"
+                                                    aria-hidden="true">rocket_launch</span>
+                                                <span class="inter-500">HealthTech Venture Showcase ($100k)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <!-- Date & Venue Strip -->
+                                <div class="flagship-meta-box p-3 mb-4">
+                                    <div class="row g-3 align-items-center">
+                                        <div class="col-12 col-sm-6">
+                                            <div class="d-flex align-items-start gap-2">
+                                                <span class="material-symbols-outlined flagship-meta-icon mt-1 flex-shrink-0"
+                                                    aria-hidden="true">calendar_today</span>
+                                                <div>
+                                                    <div class="flagship-meta-title plus-jakarta-sans-700">October 24–25, 2024
+                                                    </div>
+                                                    <div class="flagship-meta-sub inter-400">09:00 AM – 05:30 PM PKT • 2 Days
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <div class="d-flex align-items-start gap-2">
+                                                <span class="material-symbols-outlined flagship-meta-icon mt-1 flex-shrink-0"
+                                                    aria-hidden="true">location_on</span>
+                                                <div>
+                                                    <div class="flagship-meta-title plus-jakarta-sans-700">Pak-China Friendship
+                                                        Centre</div>
+                                                    <div class="flagship-meta-sub inter-400">Islamabad &amp; Worldwide Virtual
+                                                        Zoom</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Bottom Actions -->
+                            <div>
+                                <div class="d-flex flex-wrap align-items-center gap-3 mb-3">
+                                    <a href="#register-summit"
+                                        class="btn flagship-register-cta-btn plus-jakarta-sans-700 rounded-pill d-inline-flex align-items-center justify-content-center gap-2"
+                                        style="background-color: rgba(0, 108, 73, 1); border: 1px solid rgba(16, 185, 129, 0.35); color: #ffffff;">
+                                        <span>Register for Summit (Early Bird)</span>
+                                        <span class="material-symbols-outlined flagship-cta-icon" style="color: #ffffff;"
+                                            aria-hidden="true">arrow_forward</span>
+                                    </a>
+                                
+                                    <a href="#download-agenda"
+                                        class="btn flagship-agenda-pdf-btn plus-jakarta-sans-600 rounded-pill d-inline-flex align-items-center justify-content-center gap-2"
+                                        style="background-color: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.16); color: #ffffff;">
+                                        <span class="material-symbols-outlined flagship-cta-icon" style="color: #ffffff;"
+                                            aria-hidden="true">download</span>
+                                        <span>Download Full Agenda (PDF)</span>
+                                    </a>                          
+                                </div>
+        
+                                <a href="#apply-pitch"
+                                    class="flagship-pitch-link inter-500 d-inline-flex align-items-center gap-1 text-decoration-none">
+                                    <span>Apply to Pitch / Speak</span>
+                                    <span class="material-symbols-outlined" style="font-size: 14px;"
+                                        aria-hidden="true">open_in_new</span>
+                                </a>
+                            </div>
+                        </div>
+        
+                        <!-- Right Column: Auditorium Photo + Keynote Faculty & Panellists -->
+                        <div class="col-lg-5 d-flex flex-column gap-3">
+                            <!-- Auditorium Stock Image Wrapper -->
+                            <div class="flagship-media-card position-relative overflow-hidden rounded-3">
+                                <img src="images/main-planetary-hall-setup.jpg"
+                                    alt="Main Plenary Hall Setup at Pakistan Digital Health Summit"
+                                    class="img-fluid w-100 flagship-media-img" loading="lazy">
+                                <!-- Bottom Overlays -->
+                                <div
+                                    class="flagship-media-overlay position-absolute bottom-0 start-0 end-0 p-3 d-flex align-items-center justify-content-between gap-2">
+                                    <span
+                                        class="flagship-media-badge d-inline-flex align-items-center gap-2 rounded-pill px-3 py-1 plus-jakarta-sans-600">
+                                        <span class="flagship-live-dot rounded-circle flex-shrink-0" aria-hidden="true"></span>
+                                        <span>Main Plenary Hall Setup</span>
+                                    </span>
+                                    <span class="flagship-media-badge rounded-pill px-3 py-1 plus-jakarta-sans-600">
+                                        800 Capacity
+                                    </span>
+                                </div>
+                            </div>
+        
+                            <!-- Keynote Faculty & Panellists Panel -->
+                            <div class="flagship-speakers-panel p-3 rounded-3">
+                                <div class="d-flex align-items-center justify-content-between gap-2 mb-3">
+                                    <span class="flagship-speakers-heading plus-jakarta-sans-700 text-uppercase">
+                                        KEYNOTE FACULTY &amp; PANELLISTS
+                                    </span>
+                                    <span class="flagship-speakers-count plus-jakarta-sans-600">
+                                        18 Total Speakers
+                                    </span>
+                                </div>
+        
+                                <!-- 3 Speaker Mini Cards -->
+                                <div class="row row-cols-1 row-cols-sm-3 g-2 mb-3">
+                                    <!-- Speaker 1 -->
+                                    <div class="col">
+                                        <div class="flagship-speaker-card h-100 text-center p-2">
+                                            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=300&q=80"
+                                                alt="Dr. Tariq Mahmood"
+                                                class="flagship-speaker-avatar rounded-circle object-fit-cover mb-2"
+                                                loading="lazy">
+                                            <h4 class="flagship-speaker-name plus-jakarta-sans-700 mb-1">Dr. Tariq Mahmood</h4>
+                                            <p class="flagship-speaker-role inter-400 mb-1">Head of Radiology AI</p>
+                                            <p class="flagship-speaker-org plus-jakarta-sans-600 mb-0">Shaukat Khanum Memorial
+                                            </p>
+                                        </div>
+                                    </div>
+        
+                                    <!-- Speaker 2 -->
+                                    <div class="col">
+                                        <div class="flagship-speaker-card h-100 text-center p-2">
+                                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=300&q=80"
+                                                alt="Engr. Bilal Raza"
+                                                class="flagship-speaker-avatar rounded-circle object-fit-cover mb-2"
+                                                loading="lazy">
+                                            <h4 class="flagship-speaker-name plus-jakarta-sans-700 mb-1">Engr. Bilal Raza</h4>
+                                            <p class="flagship-speaker-role inter-400 mb-1">Founder &amp; CTO</p>
+                                            <p class="flagship-speaker-org plus-jakarta-sans-600 mb-0">TeleMed PK Grid</p>
+                                        </div>
+                                    </div>
+        
+                                    <!-- Speaker 3 -->
+                                    <div class="col">
+                                        <div class="flagship-speaker-card h-100 text-center p-2 ">
+                                            <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=300&q=80"
+                                                alt="Dr. Zainab Haroon"
+                                                class="flagship-speaker-avatar rounded-circle object-fit-cover mb-2"
+                                                loading="lazy">
+                                            <h4 class="flagship-speaker-name plus-jakarta-sans-700 mb-1">Dr. Zainab Haroon</h4>
+                                            <p class="flagship-speaker-role inter-400 mb-1">Lead Architect</p>
+                                            <p class="flagship-speaker-org plus-jakarta-sans-600 mb-0">EHR Harmonization Council
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <!-- Accreditation Footer -->
+                                <div
+                                    class="flagship-speakers-footer pt-2 d-flex flex-wrap align-items-center justify-content-between gap-2">
+                                    <span class="inter-400">Accreditation: PMDC &amp; Tech Facilitators</span>
+                                    <span class="flagship-tier-badge plus-jakarta-sans-600">Tier 1 National Event</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Event Calendar Section -->
+        <section class="events-calendar-section position-relative py-5 container-fluid">
+            <div class="container py-2 py-lg-3">
+                <!-- Section Header Row -->
+                <div class="row align-items-end g-3 mb-4" data-aos="fade-up" data-aos-duration="600">
+                    <div class="col-12 col-lg-6">
+                        <p class="calendar-eyebrow plus-jakarta-sans-700 text-uppercase mb-1">
+                            SCHEDULE ROADMAP
+                        </p>
+                        <h2 class="calendar-heading plus-jakarta-sans-800 mb-1">
+                            Full Event Calendar (2024–2025)
+                        </h2>
+                        <p class="calendar-subtitle inter-400 mb-0">
+                            Filter by active operational quarter, city chapter, or technical domain.
+                        </p>
+                    </div>
+        
+                    <!-- Right Controls: Quarter Pills + Grid/List Toggle -->
+                    <div class="col-12 col-lg-6">
+                        <div class="d-flex flex-wrap align-items-center justify-content-start justify-content-lg-end gap-2">
+                            <div class="calendar-quarter-group d-inline-flex flex-wrap align-items-center p-1 rounded-pill"
+                                role="tablist" aria-label="Operational Quarters">
+                                <button type="button" class="calendar-quarter-btn plus-jakarta-sans-600 rounded-pill is-active"
+                                    data-quarter="all">
+                                    Q4 2024 (Oct – Dec)
+                                </button>
+                                <button type="button" class="calendar-quarter-btn plus-jakarta-sans-600 rounded-pill"
+                                    data-quarter="q1-2025">
+                                    Q1 2025 (Jan – Mar)
+                                </button>
+                                <button type="button" class="calendar-quarter-btn plus-jakarta-sans-600 rounded-pill"
+                                    data-quarter="q2-2025">
+                                    Q2 2025 (Apr – Jun)
+                                </button>
+                            </div>
+        
+                            <div class="calendar-view-toggle d-inline-flex align-items-center p-1 rounded-3" role="group"
+                                aria-label="Calendar View Mode">
+                                <button type="button" id="calendarGridViewBtn"
+                                    class="calendar-view-btn rounded-2 d-inline-flex align-items-center justify-content-center is-active"
+                                    title="Grid View" aria-label="Grid View">
+                                    <span class="material-symbols-outlined" style="font-size: 18px;"
+                                        aria-hidden="true">grid_view</span>
+                                </button>
+                                <button type="button" id="calendarListViewBtn"
+                                    class="calendar-view-btn rounded-2 d-inline-flex align-items-center justify-content-center"
+                                    title="List View" aria-label="List View">
+                                    <span class="material-symbols-outlined" style="font-size: 18px;"
+                                        aria-hidden="true">view_agenda</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Outer Row for Calendar Cards Grid -->
+                <div class="row">
+                    <div class="col-12">
+                        <div id="eventsCalendarGrid" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <!-- Card 1: NOV 12 -->
+                            <div class="col event-calendar-col" data-quarter="all" data-category="webinar" data-location="hybrid"
+                                data-track="radiology-ai" data-aos="fade-up" data-aos-delay="50">
+                                <article class="event-cal-card h-100 p-4 rounded-4 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between gap-2 mb-3">
+                                            <span
+                                                class="event-type-badge event-type-badge--mint plus-jakarta-sans-700 rounded-pill px-3 py-1">
+                                                WEBINAR &amp; CME
+                                            </span>
+                                            <span class="event-loc-tag inter-500 d-inline-flex align-items-center gap-1">
+                                                <span class="material-symbols-outlined" style="font-size: 14px;"
+                                                    aria-hidden="true">videocam</span>
+                                                <span>Zoom Hybrid</span>
+                                            </span>
+                                        </div>
+                
+                                        <div class="d-flex align-items-start gap-3 mb-3">
+                                            <div class="event-date-box event-date-box--neutral rounded-3 text-center flex-shrink-0">
+                                                <div class="event-date-month plus-jakarta-sans-700">NOV</div>
+                                                <div class="event-date-day plus-jakarta-sans-800">12</div>
+                                            </div>
+                                            <div>
+                                                <div class="event-time-line inter-500">Tuesday • 04:30 PM – 06:00 PM PKT</div>
+                                                <div class="event-sub-meta inter-400">PMDC Registered Doctors Free</div>
+                                            </div>
+                                        </div>
+                
+                                        <h3 class="event-cal-title plus-jakarta-sans-700 mb-2">
+                                            AI in Diagnostic Imaging: Deploying Deep Learning in Local Hospitals
+                                        </h3>
+                                        <p class="event-cal-desc inter-400 mb-3">
+                                            Examining Shaukat Khanum &amp; Dow University radiologic testbeds. How Pakistani
+                                            hospitals can navigate edge compute limitations, DICOM data...
+                                        </p>
+                
+                                        <!-- Speaker Strip -->
+                                        <div
+                                            class="event-speaker-strip d-flex align-items-center justify-content-between gap-2 p-2 rounded-3 mb-3">
+                                            <div class="d-flex align-items-center gap-2 min-w-0">
+                                                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=160&q=80"
+                                                    alt="Dr. Aamir Bilal"
+                                                    class="event-mini-avatar rounded-circle object-fit-cover flex-shrink-0"
+                                                    loading="lazy">
+                                                <div class="text-truncate">
+                                                    <div class="event-mini-name plus-jakarta-sans-700 text-truncate">Dr. Aamir
+                                                        Bilal</div>
+                                                    <div class="event-mini-role inter-400 text-truncate">Dow Univ &amp; SKMCH
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <span class="event-cme-pill plus-jakarta-sans-600 rounded-pill px-2 py-1 flex-shrink-0">
+                                                2 CME Credits
+                                            </span>
+                                        </div>
+                                    </div>
+                
+                                    <div class="event-cal-footer pt-3 d-flex align-items-center justify-content-between gap-2">
+                                        <span class="event-access-text event-access-text--emerald plus-jakarta-sans-600">
+                                            Free for Members
+                                        </span>
+                                        <a href="#register-event-1"
+                                            class="btn event-cal-cta-btn plus-jakarta-sans-600 rounded-pill px-3 py-1">
+                                            Register Free
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                
+                            <!-- Card 2: DEC 6-8 -->
+                            <div class="col event-calendar-col" data-quarter="all" data-category="hackathon" data-location="lahore"
+                                data-track="rural-tele-icu" data-aos="fade-up" data-aos-delay="120">
+                                <article class="event-cal-card h-100 p-4 rounded-4 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between gap-2 mb-3">
+                                            <span
+                                                class="event-type-badge event-type-badge--dark plus-jakarta-sans-700 rounded-pill px-3 py-1">
+                                                HACKATHON &amp; GRANTS
+                                            </span>
+                                            <span class="event-loc-tag inter-500 d-inline-flex align-items-center gap-1">
+                                                <span class="material-symbols-outlined" style="font-size: 14px;"
+                                                    aria-hidden="true">location_on</span>
+                                                <span>FAST Lahore</span>
+                                            </span>
+                                        </div>
+                
+                                        <div class="d-flex align-items-start gap-3 mb-3">
+                                            <div class="event-date-box event-date-box--neutral rounded-3 text-center flex-shrink-0">
+                                                <div class="event-date-month plus-jakarta-sans-700">DEC</div>
+                                                <div class="event-date-day plus-jakarta-sans-800">6–8</div>
+                                            </div>
+                                            <div>
+                                                <div class="event-time-line inter-500">48-Hour Sprint • Dec 6–8, 2024</div>
+                                                <div class="event-grant-meta plus-jakarta-sans-600">PKR 2,500,000 in Grants
+                                                </div>
+                                            </div>
+                                        </div>
+                
+                                        <h3 class="event-cal-title plus-jakarta-sans-700 mb-2">
+                                            HealthHacks PK 2024: Low-Bandwidth Telemedicine &amp; Edge AI Challenge
+                                        </h3>
+                                        <p class="event-cal-desc inter-400 mb-3">
+                                            48 hours of rapid prototyping at FAST-NUCES Lahore. Teams of biomedical students,
+                                            clinicians, and software developers build offline-first clinical triaging software
+                                            tailored for...
+                                        </p>
+                
+                                        <div
+                                            class="event-highlight-strip d-flex align-items-center justify-content-between gap-2 px-3 py-2 rounded-3 mb-3">
+                                            <span class="inter-500 event-highlight-left">Top 3 Teams get Incubator Access</span>
+                                            <span class="plus-jakarta-sans-700 event-highlight-right">36 Teams Capped</span>
+                                        </div>
+                                    </div>
+                
+                                    <div class="event-cal-footer pt-3 d-flex align-items-center justify-content-between gap-2">
+                                        <span class="event-access-text event-access-text--muted inter-500">
+                                            Team Application Open
+                                        </span>
+                                        <a href="#apply-hackathon"
+                                            class="btn event-cal-cta-btn plus-jakarta-sans-600 rounded-pill px-3 py-1">
+                                            Apply as Team
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                
+                            <!-- Card 3: DEC 18 -->
+                            <div class="col event-calendar-col" data-quarter="all" data-category="regulatory" data-location="islamabad"
+                                data-track="drap-samd" data-aos="fade-up" data-aos-delay="190">
+                                <article class="event-cal-card h-100 p-4 rounded-4 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between gap-2 mb-3">
+                                            <span
+                                                class="event-type-badge event-type-badge--neutral plus-jakarta-sans-700 rounded-pill px-3 py-1">
+                                                REGULATORY ROUNDTABLE
+                                            </span>
+                                            <span class="event-loc-tag inter-500 d-inline-flex align-items-center gap-1">
+                                                <span class="material-symbols-outlined" style="font-size: 14px;"
+                                                    aria-hidden="true">account_balance</span>
+                                                <span>Islamabad Club</span>
+                                            </span>
+                                        </div>
+                
+                                        <div class="d-flex align-items-start gap-3 mb-3">
+                                            <div class="event-date-box event-date-box--neutral rounded-3 text-center flex-shrink-0">
+                                                <div class="event-date-month plus-jakarta-sans-700">DEC</div>
+                                                <div class="event-date-day plus-jakarta-sans-800">18</div>
+                                            </div>
+                                            <div>
+                                                <div class="event-time-line inter-500">Wednesday • 10:00 AM PKT</div>
+                                                <div class="event-sub-meta inter-400">Chatham House Rule</div>
+                                            </div>
+                                        </div>
+                
+                                        <h3 class="event-cal-title plus-jakarta-sans-700 mb-2">
+                                            DRAP &amp; NDHA Compliance Clinic: Navigating SaMD &amp; Data Sovereignty
+                                        </h3>
+                                        <p class="event-cal-desc inter-400 mb-3">
+                                            Closed-door consultative session with Drug Regulatory Authority of Pakistan
+                                            officers. Guidance on medical device classification for diagnostic mobile apps, clinical
+                                            trials, and...
+                                        </p>
+                
+                                        <div
+                                            class="event-highlight-strip d-flex align-items-center justify-content-between gap-2 px-3 py-2 rounded-3 mb-3">
+                                            <span class="inter-500 event-highlight-left">Strictly Founders &amp;
+                                                Regulators</span>
+                                            <span class="plus-jakarta-sans-700 event-seats-alert">40 Seats Only</span>
+                                        </div>
+                                    </div>
+                
+                                    <div class="event-cal-footer pt-3 d-flex align-items-center justify-content-between gap-2">
+                                        <span class="event-access-text event-access-text--muted inter-500">
+                                            Invitation Only
+                                        </span>
+                                        <a href="#request-invite"
+                                            class="btn event-cal-cta-btn plus-jakarta-sans-600 rounded-pill px-3 py-1">
+                                            Request Invitation
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                
+                            <!-- Card 4: JAN 15 -->
+                            <div class="col event-calendar-col" data-quarter="q1-2025" data-category="mixer" data-location="karachi"
+                                data-track="vc-pitch-day" data-aos="fade-up" data-aos-delay="50">
+                                <article class="event-cal-card h-100 p-4 rounded-4 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between gap-2 mb-3">
+                                            <span
+                                                class="event-type-badge event-type-badge--mint plus-jakarta-sans-700 rounded-pill px-3 py-1">
+                                                PROVINCIAL MIXER
+                                            </span>
+                                            <span class="event-loc-tag inter-500 d-inline-flex align-items-center gap-1">
+                                                <span class="material-symbols-outlined" style="font-size: 14px;"
+                                                    aria-hidden="true">apartment</span>
+                                                <span>AKU Karachi</span>
+                                            </span>
+                                        </div>
+                
+                                        <div class="d-flex align-items-start gap-3 mb-3">
+                                            <div class="event-date-box event-date-box--neutral rounded-3 text-center flex-shrink-0">
+                                                <div class="event-date-month plus-jakarta-sans-700">JAN</div>
+                                                <div class="event-date-day plus-jakarta-sans-800">15</div>
+                                            </div>
+                                            <div>
+                                                <div class="event-time-line inter-500">Wednesday • 06:30 PM – 09:30 PM PKT</div>
+                                                <div class="event-sub-meta inter-400">Networking Dinner &amp; Demos</div>
+                                            </div>
+                                        </div>
+                
+                                        <h3 class="event-cal-title plus-jakarta-sans-700 mb-2">
+                                            Karachi HealthTech Clinician-Engineer Mixer Vol. 4
+                                        </h3>
+                                        <p class="event-cal-desc inter-400 mb-3">
+                                            Hosted at the Aga Khan University Innovation Centre. Structured 1-on-1 pairing
+                                            between clinical fellows looking for software co-founders and local full-stack engineers
+                                            looking to enter...
+                                        </p>
+                
+                                        <div
+                                            class="event-highlight-strip d-flex align-items-center justify-content-between gap-2 px-3 py-2 rounded-3 mb-3">
+                                            <span class="inter-500 event-highlight-left d-inline-flex align-items-center gap-1">
+                                                <span class="material-symbols-outlined" style="font-size: 14px;"
+                                                    aria-hidden="true">restaurant</span>
+                                                <span>Dinner Included</span>
+                                            </span>
+                                            <span class="plus-jakarta-sans-700 event-highlight-right">Karachi Hub</span>
+                                        </div>
+                                    </div>
+                
+                                    <div class="event-cal-footer pt-3 d-flex align-items-center justify-content-between gap-2">
+                                        <span class="event-access-text event-access-text--emerald plus-jakarta-sans-600">
+                                            RSVP Required
+                                        </span>
+                                        <a href="#rsvp-karachi"
+                                            class="btn event-cal-cta-btn plus-jakarta-sans-600 rounded-pill px-3 py-1">
+                                            RSVP Karachi Hub
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                
+                            <!-- Card 5: JAN 28 -->
+                            <div class="col event-calendar-col" data-quarter="q1-2025" data-category="summit" data-location="lahore"
+                                data-track="fhir-ehr" data-aos="fade-up" data-aos-delay="120">
+                                <article class="event-cal-card h-100 p-4 rounded-4 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between gap-2 mb-3">
+                                            <span
+                                                class="event-type-badge event-type-badge--neutral plus-jakarta-sans-700 rounded-pill px-3 py-1">
+                                                TECHNICAL BOOTCAMP
+                                            </span>
+                                            <span class="event-loc-tag inter-500 d-inline-flex align-items-center gap-1">
+                                                <span class="material-symbols-outlined" style="font-size: 14px;"
+                                                    aria-hidden="true">domain</span>
+                                                <span>Arfa Software Park</span>
+                                            </span>
+                                        </div>
+                
+                                        <div class="d-flex align-items-start gap-3 mb-3">
+                                            <div class="event-date-box event-date-box--neutral rounded-3 text-center flex-shrink-0">
+                                                <div class="event-date-month plus-jakarta-sans-700">JAN</div>
+                                                <div class="event-date-day plus-jakarta-sans-800">28</div>
+                                            </div>
+                                            <div>
+                                                <div class="event-time-line inter-500">Tuesday • 10:00 AM – 04:00 PM PKT</div>
+                                                <div class="event-sub-meta inter-400">Arfa Tower, Ferozepur Rd Lahore</div>
+                                            </div>
+                                        </div>
+                
+                                        <h3 class="event-cal-title plus-jakarta-sans-700 mb-2">
+                                            FHIR &amp; HL7 Standards Hands-on Bootcamp for Health Software Engineers
+                                        </h3>
+                                        <p class="event-cal-desc inter-400 mb-3">
+                                            Deep dive into HL7 FHIR Release 4 implementation. Build real clinical resource
+                                            models for Pakistan: patient registries, lab...
+                                        </p>
+                
+                                        <div
+                                            class="event-highlight-strip d-flex align-items-center justify-content-between gap-2 px-3 py-2 rounded-3 mb-3">
+                                            <span class="inter-500 event-highlight-left">Bring Laptop &amp; Docker</span>
+                                            <span class="plus-jakarta-sans-700 event-highlight-right">Certificate Issued</span>
+                                        </div>
+                                    </div>
+                
+                                    <div class="event-cal-footer pt-3 d-flex align-items-center justify-content-between gap-2">
+                                        <span class="event-access-text event-access-text--muted inter-500">
+                                            Member Discount: 50%
+                                        </span>
+                                        <a href="#register-bootcamp"
+                                            class="btn event-cal-cta-btn plus-jakarta-sans-600 rounded-pill px-3 py-1">
+                                            Register Workshop
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                
+                            <!-- Card 6: FEB 10 -->
+                            <div class="col event-calendar-col" data-quarter="q2-2025" data-category="summit" data-location="peshawar"
+                                data-track="rural-tele-icu" data-aos="fade-up" data-aos-delay="190">
+                                <article class="event-cal-card h-100 p-4 rounded-4 d-flex flex-column justify-content-between">
+                                    <div>
+                                        <div class="d-flex align-items-center justify-content-between gap-2 mb-3">
+                                            <span
+                                                class="event-type-badge event-type-badge--mint plus-jakarta-sans-700 rounded-pill px-3 py-1">
+                                                FRONTIER SHOWCASE
+                                            </span>
+                                            <span class="event-loc-tag inter-500 d-inline-flex align-items-center gap-1">
+                                                <span class="material-symbols-outlined" style="font-size: 14px;"
+                                                    aria-hidden="true">school</span>
+                                                <span>KMU Peshawar</span>
+                                            </span>
+                                        </div>
+                
+                                        <div class="d-flex align-items-start gap-3 mb-3">
+                                            <div class="event-date-box event-date-box--neutral rounded-3 text-center flex-shrink-0">
+                                                <div class="event-date-month plus-jakarta-sans-700">FEB</div>
+                                                <div class="event-date-day plus-jakarta-sans-800">10</div>
+                                            </div>
+                                            <div>
+                                                <div class="event-time-line inter-500">Monday • 11:00 AM – 03:30 PM PKT</div>
+                                                <div class="event-sub-meta inter-400">Khyber Medical University</div>
+                                            </div>
+                                        </div>
+                
+                                        <h3 class="event-cal-title plus-jakarta-sans-700 mb-2">
+                                            Peshawar Frontier Telehealth &amp; Rural Diagnostics Showcase
+                                        </h3>
+                                        <p class="event-cal-desc inter-400 mb-3">
+                                            Demonstrating operational remote diagnostic clinics in Khyber Pakhtunkhwa, Merged
+                                            Districts, and Gilgit-Baltistan. Real solar-powered ultrasound and satellite
+                                            connectivity...
+                                        </p>
+                
+                                        <div
+                                            class="event-highlight-strip d-flex align-items-center justify-content-between gap-2 px-3 py-2 rounded-3 mb-3">
+                                            <span class="inter-500 event-highlight-left">Co-hosted with KMU IT Cell</span>
+                                            <span class="plus-jakarta-sans-700 event-highlight-right">Peshawar Chapter</span>
+                                        </div>
+                                    </div>
+                
+                                    <div class="event-cal-footer pt-3 d-flex align-items-center justify-content-between gap-2">
+                                        <span class="event-access-text event-access-text--emerald plus-jakarta-sans-600">
+                                            Free RSVP
+                                        </span>
+                                        <a href="#rsvp-peshawar"
+                                            class="btn event-cal-cta-btn plus-jakarta-sans-600 rounded-pill px-3 py-1">
+                                            RSVP Peshawar Hub
+                                        </a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Past Events & Clinical Impact Section -->
+        <section class="past-events-impact-section position-relative container-fluid py-5">
+            <div class="container py-2 py-lg-3">
+                <!-- Header Row -->
+                <div class="row align-items-end g-3 mb-4" data-aos="fade-up" data-aos-duration="600">
+                    <div class="col-12 col-lg-8">
+                        <p class="impact-eyebrow plus-jakarta-sans-700 text-uppercase mb-1">
+                            HISTORICAL TRACK RECORD
+                        </p>
+                        <h2 class="impact-heading plus-jakarta-sans-800 mb-1">
+                            Past Events &amp; Clinical Impact
+                        </h2>
+                        <p class="impact-subtitle inter-400 mb-0">
+                            Every HealthTech Pakistan gathering produces peer-reviewed whitepapers, open GitHub
+                            software repos, and clinical recommendations submitted to public health bodies.
+                        </p>
+                    </div>
+        
+                    <div class="col-12 col-lg-4 text-lg-end">
+                        <a href="#archive-library"
+                            class="impact-archive-link plus-jakarta-sans-600 d-inline-flex align-items-center gap-1 text-decoration-none">
+                            <span>View Archive Library &amp; Video Recordings</span>
+                            <span class="material-symbols-outlined" style="font-size: 16px;"
+                                aria-hidden="true">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+        
+                <!-- Main Content Row: Featured Summit Card (Left) + Stacked Impact Cards (Right) -->
+                <div class="row g-4 align-items-stretch">
+                    <!-- Left Column: Featured Past Summit Card -->
+                    <div class="col-12 col-lg-6" data-aos="fade-up" data-aos-delay="100" data-aos-duration="700">
+                        <article
+                            class="impact-featured-card h-100 p-3 rounded-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <!-- Top Status Pills -->
+                                <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+                                    <span class="impact-pill impact-pill--muted plus-jakarta-sans-600 rounded-pill px-3 py-1">
+                                        Completed: November 2023
+                                    </span>
+                                    <span class="impact-pill impact-pill--mint plus-jakarta-sans-600 rounded-pill px-3 py-1">
+                                        Karachi Marriott &amp; Virtual
+                                    </span>
+                                </div>
+        
+                                <!-- Summit Title & Summary -->
+                                <h3 class="impact-featured-title plus-jakarta-sans-800 mb-2">
+                                    Pakistan Digital Health Summit 2023 (Karachi)
+                                </h3>
+                                <p class="impact-featured-desc inter-400 mb-4">
+                                    Over two intense days, 650+ clinical leaders debated national telemedicine licensing
+                                    and launched the first open-source Urdu Clinical Terminology database.
+                                </p>
+        
+                                <!-- 3 White Metric Boxes Row -->
+                                <div class="row row-cols-1 row-cols-sm-3 g-3 mb-4">
+                                    <div class="col">
+                                        <div class="impact-metric-box h-100 p-3 rounded-3">
+                                            <div class="impact-metric-num impact-metric-num--emerald plus-jakarta-sans-800">
+                                                650+
+                                            </div>
+                                            <div class="impact-metric-label inter-400">Attendees</div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="impact-metric-box h-100 p-3 rounded-3">
+                                            <div class="impact-metric-num plus-jakarta-sans-800">
+                                                24
+                                            </div>
+                                            <div class="impact-metric-label inter-400">Venture Pitches</div>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="impact-metric-box h-100 p-3 rounded-3">
+                                            <div class="impact-metric-num impact-metric-num--emerald plus-jakarta-sans-800">
+                                                3
+                                            </div>
+                                            <div class="impact-metric-label inter-400">Whitepapers Issued</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- Bottom CTA Buttons -->
+                            <div class="d-flex flex-column flex-sm-row flex-wrap align-items-stretch align-items-sm-center gap-2">
+                                <a href="#watch-plenary-sessions"
+                                    class="btn impact-btn-dark plus-jakarta-sans-600 rounded-pill d-inline-flex align-items-center justify-content-center gap-2">
+                                    <span class="material-symbols-outlined impact-cta-icon flex-shrink-0" style="font-size: 16px;"
+                                        aria-hidden="true">play_circle</span>
+                                    <span>Watch 14 Plenary Sessions</span>
+                                </a>
+                            
+                                <a href="#download-2023-report"
+                                    class="btn impact-btn-light plus-jakarta-sans-600 rounded-pill d-inline-flex align-items-center justify-content-center gap-2">
+                                    <span class="material-symbols-outlined impact-cta-icon flex-shrink-0" style="font-size: 16px;"
+                                        aria-hidden="true">description</span>
+                                    <span>Download 2023 Proceedings Report</span>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+        
+                    <!-- Right Column: 2 Stacked Past Event Cards -->
+                    <div class="col-12 col-lg-6 d-flex flex-column gap-4">
+                        <!-- Right Card 1: National Tele-ICU Consortium Round -->
+                        <article class="impact-side-card flex-fill p-4 rounded-4 d-flex flex-column justify-content-between"
+                            data-aos="fade-up" data-aos-delay="180" data-aos-duration="700">
+                            <div>
+                                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+                                    <span class="impact-side-tag plus-jakarta-sans-700 text-uppercase">
+                                        CONSORTIUM MEETUP
+                                    </span>
+                                    <span class="impact-side-date inter-400">
+                                        Lahore • May 2024
+                                    </span>
+                                </div>
+        
+                                <h3 class="impact-side-title plus-jakarta-sans-700 mb-2">
+                                    National Tele-ICU Consortium Round
+                                </h3>
+                                <p class="impact-side-desc inter-400 mb-3">
+                                    Connected 30+ regional tertiary ICUs across Punjab and KP with real-time
+                                    biometric telemetry frameworks.
+                                </p>
+                            </div>
+        
+                            <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 pt-1">
+                                <span class="impact-side-stat plus-jakarta-sans-600">
+                                    120 Intensivists Enrolled
+                                </span>
+                                <a href="#read-consensus-paper"
+                                    class="impact-side-link plus-jakarta-sans-600 d-inline-flex align-items-center gap-1 text-decoration-none">
+                                    <span>Read Consensus Paper</span>
+                                    <span class="material-symbols-outlined" style="font-size: 14px;"
+                                        aria-hidden="true">open_in_new</span>
+                                </a>
+                            </div>
+                        </article>
+        
+                        <!-- Right Card 2: Maternal Health Edge-AI Hackathon -->
+                        <article class="impact-side-card flex-fill p-4 rounded-4 d-flex flex-column justify-content-between"
+                            data-aos="fade-up" data-aos-delay="260" data-aos-duration="700">
+                            <div>
+                                <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 mb-2">
+                                    <span class="impact-side-tag plus-jakarta-sans-700 text-uppercase">
+                                        HACKATHON REVIEW
+                                    </span>
+                                    <span class="impact-side-date inter-400">
+                                        Islamabad • March 2024
+                                    </span>
+                                </div>
+        
+                                <h3 class="impact-side-title plus-jakarta-sans-700 mb-2">
+                                    Maternal Health Edge-AI Hackathon
+                                </h3>
+                                <p class="impact-side-desc inter-400 mb-3">
+                                    42 prototypes evaluated by Lady Health Worker trainers and UNICEF
+                                    tech mentors. PKR 1.8M disbursed.
+                                </p>
+                            </div>
+        
+                            <div class="d-flex flex-wrap align-items-center justify-content-between gap-2 pt-1">
+                                <span class="impact-side-stat plus-jakarta-sans-600">
+                                    2 Seed-funded Teams
+                                </span>
+                                <a href="#view-winners-demo"
+                                    class="impact-side-link plus-jakarta-sans-600 d-inline-flex align-items-center gap-1 text-decoration-none">
+                                    <span>View Winners Demo</span>
+                                    <span class="material-symbols-outlined" style="font-size: 14px;"
+                                        aria-hidden="true">open_in_new</span>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Co-Create With Us CTA Banner Section -->
+        <section class="cocreate-cta-section position-relative py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="cocreate-banner-card position-relative overflow-hidden p-4  rounded-4">
+                            <!-- Ambient Emerald Glow -->
+                            <div class="cocreate-banner-glow position-absolute rounded-circle" aria-hidden="true"></div>
+        
+                            <div class="row g-4 g-lg-5 align-items-center position-relative z-1">
+                                <!-- Left Column: Eyebrow, Heading, Copy & Trust Indicators -->
+                                <div class="col-12 col-lg-8">
+                                    <span
+                                        class="cocreate-badge plus-jakarta-sans-700 text-uppercase rounded-pill px-3 py-1 d-inline-block mb-3">
+                                        CO-CREATE WITH US
+                                    </span>
+        
+                                    <h2 class="cocreate-heading plus-jakarta-sans-800 mb-3">
+                                        Have a clinical breakthrough or health software tool to demonstrate?
+                                    </h2>
+        
+                                    <p class="cocreate-desc inter-400 mb-4">
+                                        Partner with HealthTech Pakistan to host an official CME workshop, regional
+                                        chapter meetup, clinical trial demo, or technical hackathon at your
+                                        medical institute or tech campus.
+                                    </p>
+        
+                                    <!-- Trust / Impact Indicators Row -->
+                                    <div class="row row-cols-1 row-cols-sm-3 g-2 g-md-3">
+                                        <div class="col">
+                                            <div class="cocreate-meta-item d-flex align-items-center gap-2 inter-500">
+                                                <span class="material-symbols-outlined cocreate-meta-icon flex-shrink-0"
+                                                    style="font-size: 16px;" aria-hidden="true">verified_user</span>
+                                                <span>PMDC CME Accreditation Support</span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col">
+                                            <div class="cocreate-meta-item d-flex align-items-center gap-2 inter-500">
+                                                <span class="material-symbols-outlined cocreate-meta-icon flex-shrink-0"
+                                                    style="font-size: 16px;" aria-hidden="true">groups</span>
+                                                <span>Reach 3,500+ Verified Clinicians</span>
+                                            </div>
+                                        </div>
+        
+                                        <div class="col">
+                                            <div class="cocreate-meta-item d-flex align-items-center gap-2 inter-500">
+                                                <span class="material-symbols-outlined cocreate-meta-icon flex-shrink-0"
+                                                    style="font-size: 16px;" aria-hidden="true">campaign</span>
+                                                <span>National Press &amp; Policy Reach</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <!-- Right Column: Propose a Format Box -->
+                                <div class="col-12 col-lg-4">
+                                    <div class="cocreate-format-box p-4 rounded-4">
+                                        <h3 class="cocreate-format-title plus-jakarta-sans-700 mb-1">
+                                            Propose a Format
+                                        </h3>
+                                        <p class="cocreate-format-sub inter-400 mb-3">
+                                            We review proposals within 5 business days
+                                        </p>
+        
+                                        <div class="d-grid gap-2 mb-3">
+                                            <a href="#propose-session"
+                                                class="btn cocreate-btn-primary plus-jakarta-sans-600 rounded-3 d-inline-flex align-items-center justify-content-center"
+                                                style="background-color: rgba(0, 108, 73, 1); border: 1px solid rgba(16, 185, 129, 0.45); color: #ffffff;">
+                                                Propose a Session / Workshop
+                                            </a>
+        
+                                            <a href="#sponsor-flagship"
+                                                class="btn cocreate-btn-secondary plus-jakarta-sans-600 rounded-3 d-inline-flex align-items-center justify-content-center"
+                                                style="background-color: rgba(255, 255, 255, 0.12); border: 1px solid rgba(255, 255, 255, 0.16); color: #e2e8f0;">
+                                                Sponsor a Flagship Event
+                                            </a>
+                                        </div>
+        
+                                        <p class="cocreate-contact-note inter-400 text-center mb-0">
+                                            Questions? Email
+                                            <a href="mailto:events@healthtech.pk"
+                                                class="cocreate-email-link plus-jakarta-sans-600 text-decoration-none">
+                                                events@healthtech.pk
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Event Digest Subscription Section -->
+        <section class="event-digest-section position-relative py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="event-digest-card p-4 rounded-4">
+                            <div class="row g-4 align-items-center justify-content-between">
+                                <!-- Left Column: Eyebrow, Heading & Description -->
+                                <div class="col-12 col-lg-7">
+                                    <div class="d-inline-flex align-items-center gap-1 mb-2">
+                                        <span class="material-symbols-outlined event-digest-eyebrow-icon"
+                                            style="font-size: 14px;" aria-hidden="true">notifications</span>
+                                        <span class="event-digest-eyebrow plus-jakarta-sans-700 text-uppercase">
+                                            NEVER MISS A GATHERING
+                                        </span>
+                                    </div>
+        
+                                    <h2 class="event-digest-heading plus-jakarta-sans-800 mb-2">
+                                        Subscribe to early-bird tickets and monthly clinical event digests.
+                                    </h2>
+        
+                                    <p class="event-digest-desc inter-400 mb-0">
+                                        Directly delivered to your inbox with calendar invites (.ics), speaker slides, and
+                                        CME credit verification codes.
+                                    </p>
+                                </div>
+        
+                                <!-- Right Column: Email Pill Input + Notify Me Button -->
+                                <div class="col-12 col-lg-5">
+                                    <form
+                                        class="event-digest-form d-flex flex-column flex-sm-row align-items-stretch align-items-sm-center gap-2 justify-content-lg-end"
+                                        novalidate>
+                                        <label for="digestWorkEmail" class="visually-hidden">
+                                            Institutional or work email
+                                        </label>
+                                        <input id="digestWorkEmail" type="email" required
+                                            placeholder="Enter institutional or work email..."
+                                            class="form-control event-digest-input inter-400 rounded-pill flex-grow-1">
+        
+                                        <button type="submit"
+                                            class="btn event-digest-submit-btn plus-jakarta-sans-600 rounded-pill flex-shrink-0">
+                                            Notify Me
+                                        </button>
+                                    </form>
+                                    <div class="event-digest-feedback inter-400 mt-2 text-lg-end d-none" id="digestFeedbackMsg">
+                                        Subscribed! Monthly digests and .ics invites will be sent to your inbox.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer-section pt-5 pb-4 text-white container-fluid" style="background-color: #031733;">
+        <div class="container pt-4">
+            <div class="row g-4 justify-content-between mb-5">
+    
+                <!-- Brand & Info Column -->
+                <div class="col-lg-4 col-md-6">
+                    <!-- Logo & Brand Name -->
+                    <a href="/" class="d-flex align-items-center gap-2 mb-3 text-decoration-none">
+                        <img src="images/healthtech-logo.jpg" alt="HealthTech Pakistan Logo" class="rounded-circle"
+                            style="width: 52px; height: 52px; object-fit: cover;">
+                        <span class="inter-600 fs-5 text-white">HealthTech Pakistan</span>
+                    </a>
+    
+                    <!-- Mission Text -->
+                    <p class="inter-500 small mb-4" style="max-width: 320px; line-height: 1.6; color: rgba(103, 126, 156);">
+                        Uniting healthcare pioneers, clinical researchers, founders, and engineers to build a resilient,
+                        technology-enabled healthcare ecosystem across Pakistan.
+                    </p>
+    
+                    <!-- Social Icons -->
+                    <div class="d-flex align-items-center gap-2">
+                        <a href="#"
+                            class="social-icon d-flex align-items-center justify-content-center rounded-circle text-white text-decoration-none"
+                            style="width: 36px; height: 36px; background-color: rgba(255, 255, 255, 0.1);">
+                            <span class="material-symbols-outlined fs-6">share</span>
+                        </a>
+                        <a href="#"
+                            class="social-icon d-flex align-items-center justify-content-center rounded-circle text-white text-decoration-none"
+                            style="width: 36px; height: 36px; background-color: rgba(255, 255, 255, 0.1);">
+                            <span class="material-symbols-outlined fs-6">public</span>
+                        </a>
+                        <a href="#"
+                            class="social-icon d-flex align-items-center justify-content-center rounded-circle text-white text-decoration-none"
+                            style="width: 36px; height: 36px; background-color: rgba(255, 255, 255, 0.1);">
+                            <span class="material-symbols-outlined fs-6">mail</span>
+                        </a>
+                    </div>
+                </div>
+    
+                <!-- Links Column 1: Community -->
+                <div class="col-lg-2 col-6 col-md-3">
+                    <h6 class="plus-jakarta-sans-700 text-white mb-3" style="font-size: 12px; letter-spacing: 0.5px;">
+                        COMMUNITY</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small mb-0">
+                        <li><a href="#" class="footer-link inter-500 text-decoration-none">Clinicians & Founders</a>
+                        </li>
+                        <li><a href="#" class="footer-link inter-500 text-decoration-none">National Symposia</a></li>
+                        <li><a href="#" class="footer-link inter-500 text-decoration-none">Clinical Discussion Forum</a>
+                        </li>
+                        <li><a href="#" class="footer-link inter-500 text-decoration-none">Advisory Council</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Links Column 2: Insights -->
+                <div class="col-lg-2 col-6 col-md-3">
+                    <h6 class="plus-jakarta-sans-700 text-white mb-3" style="font-size: 12px; letter-spacing: 0.5px;">
+                        INSIGHTS</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small mb-0">
+                        <li><a href="#" class="footer-link inter-500 text-decoration-none">Digital Health Reports</a>
+                        </li>
+                        <li><a href="#" class="footer-link inter-500 text-decoration-none">Regulatory Whitepapers</a>
+                        </li>
+                        <li><a href="#" class="footer-link inter-500 text-decoration-none">Clinical Case Studies</a>
+                        </li>
+                        <li><a href="#" class="footer-link inter-500 text-decoration-none">Health Innovation Index</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <!-- Links Column 3: Ecosystem -->
+                <div class="col-lg-2 col-6 col-md-3">
+                    <h6 class="plus-jakarta-sans-700 text-white mb-3" style="font-size: 12px; letter-spacing: 0.5px;">
+                        ECOSYSTEM</h6>
+                    <ul class="list-unstyled d-flex flex-column gap-2 small mb-0">
+                        <li><a href="#" class="footer-link inter-500 text-decoration-none">Partner Hospitals</a></li>
+                        <li><a href="#" class="footer-link inter-500 text-decoration-none">Academic Institutes</a></li>
+                        <li><a href="#" class="footer-link inter-500 text-decoration-none">Venture Backers</a></li>
+                        <li><a href="#" class="footer-link inter-500 text-decoration-none">Privacy & Governance</a></li>
+                    </ul>
+                </div>
+    
+            </div>
+    
+            <!-- Divider Line -->
+            <hr class="my-4" style="border-color: rgba(255, 255, 255, 0.1);">
+    
+            <!-- Bottom Copyright Row -->
+            <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 inter-500 small"
+                style="color: #577487;">
+                <div>
+                    © 2026 HealthTech Pakistan. All rights reserved. Powered By
+                    <a href="https://digitechinfra.com" target="_blank" rel="noopener noreferrer"
+                        class="digitech-link text-decoration-none inter-600" style="color: #577487;">
+                        Digitech Infra
+                    </a>
+                </div>
+    
+                <div class="d-flex align-items-center gap-4">
+                    <a href="#" class="footer-link text-decoration-none inter-500" style="color: #577487;">Terms of
+                        Service</a>
+                    <a href="#" class="footer-link text-decoration-none inter-500" style="color: #577487;">Medical
+                        Disclaimer</a>
+                    <a href="#" class="footer-link text-decoration-none inter-500" style="color: #577487;">Privacy
+                        Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+   
+
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true, // Yeh ensure karega ke animation sirf ek hi baar chale
+            duration: 800,
+        }
+        );
+    </script>
+</body>
+
+</html>

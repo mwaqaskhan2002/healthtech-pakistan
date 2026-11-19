@@ -2321,3 +2321,1226 @@
 }
 
 /* ========== Fast-Track Onboarding Section End ========= */
+
+
+
+
+/* ========== Events Hero Section Styles ========= */
+
+.events-hero-section {
+  background-color: #ffffff;
+}
+
+/* Top-Right & Bottom-Left Ambient Glows */
+.events-glow-top-right {
+  width: 540px;
+  height: 540px;
+  top: -400px;
+  right: -350px;
+  background-color: rgba(0, 108, 73, 0.5) !important; /* ~5% opacity emerald tint */
+  filter: blur(240px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.events-glow-bottom-left {
+  width: 460px;
+  height: 460px;
+  bottom: -400px;
+  left: -140px;
+  background-color: rgba(147, 204, 255, 0.5) !important; /* ~20% opacity sky blue tint */
+  filter: blur(280px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.events-hero-badge {
+  background-color: rgba(242, 244, 246, 0.9);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  border-radius: 16px; /* Mobile par 2 lines hone par clean rounded corners */
+  color: #45464D;
+  font-size: 10px;
+  line-height: 1.3;
+  letter-spacing: 0.04em;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .events-hero-badge {
+    border-radius: 9999px; /* Tablet/Desktop par full pill */
+    font-size: 11px;
+    line-height: 1.2;
+  }
+}
+
+.events-hero-side-label {
+  color: #45464D;
+  font-size: 11px;
+}
+/* Dots inside Badge */
+.events-dot-primary {
+  width: 8px;
+  height: 8px;
+  background-color: #006C49;
+}
+
+.events-dot-divider {
+  width: 7.8px;
+  height: 14px;
+  color: #C6C6CE;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.events-dot-sub {
+  width: 7.8px;
+  height: 14px;
+  color: #45464D;
+  font-size: 14px;
+  line-height: 14px;
+}
+
+/* Main Heading & Highlight */
+.events-hero-title {
+  color: #191C1E;
+  font-size: clamp(1.8125rem, 1.3304rem + 2.4107vw, 3.375rem);
+  line-height: 1.12;
+  letter-spacing: -1.68px;
+}
+
+.events-hero-highlight {
+  color: rgba(0, 108, 73, 1);
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 108, 73, 0.3);
+  text-decoration-thickness: 4px;
+  text-underline-offset: 6px;
+}
+
+/* Subtitle */
+.events-hero-subtitle {
+  color: rgba(69, 70, 77, 1);
+  font-size: 14px;
+  line-height: 1.6;
+  max-width: 680px;
+}
+
+/* Right Side Cards */
+.events-info-card {
+  background-color: rgba(242, 244, 246, 1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.events-info-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.events-info-icon--cme {
+  background-color: rgba(108, 248, 187, 1);
+  color: rgba(0, 113, 77, 1);
+}
+
+.events-info-icon--hybrid {
+  background-color: rgba(19, 26, 51, 1);
+  color: #ffffff;
+}
+
+.events-info-title {
+  color: #191C1E;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.events-info-desc {
+  color: rgba(69, 70, 77, 1);
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.events-valid-pill {
+  background-color: #ffffff;
+  color: rgba(0, 108, 73, 1);
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+.events-hybrid-label {
+  color: rgba(69, 70, 77, 1);
+  font-size: 11px;
+  line-height: 1.2;
+}
+
+/* ========== Search & Multifacet Filter Console ========= */
+
+.search-multifacet-filter-console {
+  background-color: rgba(242, 244, 246, 0.92);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border-radius: 32px;
+}
+
+.events-filter-control {
+  min-height: 44px;
+  border: 1px solid rgba(226, 232, 240, 1);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.events-filter-icon {
+  font-size: 18px;
+  color: rgba(69, 70, 77, 1);
+}
+
+/* Unified Field Styling (Input + Selects) */
+.events-filter-field {
+  font-size: 13px !important;
+  color: #191C1E !important;
+  line-height: 1.4;
+}
+
+/* Search Input Placeholder */
+.events-filter-field::placeholder {
+  font-size: 13px !important;
+  color: rgba(123, 131, 160, 1) !important;
+  opacity: 1; /* Firefox opacity fix */
+}
+
+/* Select Dropdown Options */
+.events-filter-field option {
+  font-size: 13px;
+  color: #191C1E;
+}
+
+.events-filter-input,
+.events-filter-select {
+  font-size: 13px;
+  color: #191C1E;
+}
+
+.events-filter-input::placeholder {
+  color: rgba(123, 131, 160, 1);
+}
+
+/* Quick Focus Row */
+.events-quick-focus-label {
+  font-size: 10.5px;
+  color: rgba(69, 70, 77, 1);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.events-focus-pill {
+  background-color: #ffffff;
+  color: rgba(25, 28, 30, 1);
+  border: 1px solid rgba(226, 232, 240, 1);
+  border-radius: 9999px;
+  padding: 5px 12px;
+  font-size: 11.5px;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.events-focus-pill:hover {
+  border-color: rgba(128, 128, 128, 0.45);
+  color: rgb(36, 37, 36);
+}
+
+.events-focus-pill.is-active {
+  background-color: rgba(19, 26, 51, 1);
+  border-color: rgba(19, 26, 51, 1);
+  color: #ffffff;
+}
+
+
+/* ========== Events Hero Stats Counter Cards ========= */
+
+.events-stat-card {
+  background-color: rgba(242, 244, 246, 1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.events-stat-card:hover {
+  box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.07);
+}
+
+.events-stat-number {
+  color: #191C1E;
+  font-size: clamp(1.625rem, 1.4rem + 1vw, 2.125rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.events-stat-icon {
+  font-size: 20px;
+  color: rgba(0, 108, 73, 1);
+  margin-top: 4px;
+}
+
+.events-stat-title {
+  color: #191C1E;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.events-stat-desc {
+  color: rgba(69, 70, 77, 1);
+  font-size: 11.5px;
+  line-height: 1.4;
+}
+/* ========== Events Hero Section End ========= */
+
+
+
+
+
+/* ========== Featured Flagship Showcase Hero Card ========= */
+
+
+.section-featured-flagship-showcase-hero-card-section{
+  background-color: rgba(247, 249, 251, 1);
+}
+
+.flagship-eyebrow {
+  color: rgba(0, 108, 73, 1);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+.flagship-section-heading {
+  color: #191C1E;
+  font-size: clamp(1.5rem, 1.25rem + 1.1vw, 2.125rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.flagship-reg-status {
+  color: rgba(69, 70, 77, 1);
+  font-size: 12px;
+}
+
+.flagship-live-dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(16, 185, 129, 1);
+}
+
+/* Main Dark Navy Showcase Container */
+.flagship-showcase-card {
+  background: linear-gradient(135deg, #0D1528 0%, #131C33 55%, #0F172A 100%);
+  border-radius: 24px;
+  box-shadow: 0 24px 48px -12px rgba(13, 21, 40, 0.28);
+  color: #ffffff;
+}
+
+.flagship-card-glow {
+  width: 420px;
+  height: 420px;
+  top: -140px;
+  right: -100px;
+  background-color: rgba(0, 108, 73, 0.18);
+  filter: blur(140px);
+  pointer-events: none;
+}
+
+/* Bottom-Right Corner Glow inside Flagship Card */
+.flagship-card-glow-bottom-right {
+  width: 384px;
+  height: 384px;
+  bottom: -120px;
+  right: -110px;
+  background-color: rgba(0, 108, 73, 0.15) !important;
+  filter: blur(128px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Top Pills inside Card */
+.flagship-pill {
+  font-size: 10.5px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+}
+
+.flagship-pill--emerald {
+  background-color: rgba(0, 108, 73, 1);
+  color: #ffffff;
+}
+
+.flagship-pill--slate {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(226, 232, 240, 1);
+}
+
+.flagship-pill--teal {
+  background-color: rgba(16, 185, 129, 0.14);
+  border: 1px solid rgba(16, 185, 129, 0.28);
+  color: rgba(108, 248, 187, 1);
+}
+
+/* Card Headline, Tagline & Description */
+.flagship-card-title {
+  color: #ffffff;
+  font-size: clamp(1.625rem, 1.35rem + 1.3vw, 2.375rem);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.flagship-card-tagline {
+  color: rgba(74, 222, 128, 1);
+  font-size: 14.5px;
+  line-height: 1.45;
+}
+
+.flagship-card-desc {
+  color: rgba(203, 213, 225, 0.9);
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+
+/* Symposia Tracks Grid */
+.flagship-tracks-label {
+  color: rgba(148, 163, 184, 1);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+.flagship-track-item {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(241, 245, 249, 1);
+  font-size: 12px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.flagship-track-item:hover {
+  background-color: rgba(255, 255, 255, 0.09);
+  border-color: rgba(108, 248, 187, 0.35);
+}
+
+.flagship-track-icon {
+  font-size: 16px;
+  color: rgba(74, 222, 128, 1);
+}
+
+/* Date & Location Strip */
+.flagship-meta-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+}
+
+.flagship-meta-icon {
+  font-size: 18px;
+  color: rgba(74, 222, 128, 1);
+}
+
+.flagship-meta-title {
+  color: #ffffff;
+  font-size: 12.5px;
+  line-height: 1.3;
+}
+
+.flagship-meta-sub {
+  color: rgba(148, 163, 184, 1);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.flagship-register-cta-btn,
+.flagship-agenda-pdf-btn {
+  min-height: 42px;
+  padding: 10px 20px;
+  font-size: 12.5px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  transition: background-color 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease, transform 0.22s ease;
+}
+
+.flagship-cta-icon {
+  font-size: 18px;
+  line-height: 1;
+  transition: transform 0.22s ease;
+}
+
+.flagship-register-cta-btn:hover,
+.flagship-register-cta-btn:focus-visible {
+  background-color: rgba(0, 126, 86, 1) !important;
+  border-color: rgba(108, 248, 187, 0.5) !important;
+  color: #ffffff !important;
+}
+
+.flagship-register-cta-btn:hover .flagship-cta-icon {
+  transform: translateX(3px);
+}
+
+.flagship-agenda-pdf-btn:hover,
+.flagship-agenda-pdf-btn:focus-visible {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.28) !important;
+  color: #ffffff !important;
+}
+
+.flagship-agenda-pdf-btn:hover .flagship-cta-icon {
+  transform: translateY(2px);
+}
+.flagship-pitch-link {
+  color: rgba(148, 163, 184, 1);
+  font-size: 12px;
+  transition: color 0.2s ease;
+}
+
+.flagship-pitch-link:hover {
+  color: rgba(108, 248, 187, 1);
+}
+
+/* Right Column: Media Card */
+.flagship-media-card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-height: 220px;
+}
+
+.flagship-media-img {
+  height: 235px;
+  object-fit: cover;
+  display: block;
+}
+
+.flagship-media-overlay {
+  background: linear-gradient(180deg, rgba(13, 21, 40, 0) 0%, rgba(13, 21, 40, 0.85) 100%);
+}
+
+.flagship-media-badge {
+  background-color: rgba(15, 23, 42, 0.78);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  font-size: 11px;
+}
+
+/* Right Column: Speakers Panel */
+.flagship-speakers-panel {
+  background-color: rgba(224, 227, 229, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.flagship-speakers-heading {
+  color: rgba(226, 232, 240, 1);
+  font-size: 10.5px;
+  letter-spacing: 0.06em;
+}
+
+.flagship-speakers-count {
+  color: rgba(74, 222, 128, 1);
+  font-size: 11px;
+}
+
+
+.flagship-speaker-card {
+  background-color: rgba(19, 26, 51, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.flagship-speaker-card:hover {
+  border-color: rgba(74, 222, 128, 0.35);
+}
+
+.flagship-speaker-avatar {
+  width: 52px;
+  height: 52px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.flagship-speaker-name {
+  color: #ffffff;
+  font-size: 11.5px;
+  line-height: 1.25;
+}
+
+.flagship-speaker-role {
+  color: rgba(148, 163, 184, 1);
+  font-size: 10px;
+  line-height: 1.3;
+}
+
+.flagship-speaker-org {
+  color: rgba(74, 222, 128, 1);
+  font-size: 10px;
+  line-height: 1.25;
+}
+
+.flagship-speakers-footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  color: rgba(148, 163, 184, 1);
+  font-size: 10.5px;
+}
+
+.flagship-tier-badge {
+  color: rgba(74, 222, 128, 1);
+}
+
+
+/* ========== Event Calendar Section ========= */
+
+.events-calendar-section {
+  background-color: rgba(242, 244, 246, 1);
+}
+
+.calendar-eyebrow {
+  color: rgba(0, 108, 73, 1);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+.calendar-heading {
+  color: #191C1E;
+  font-size: clamp(1.5rem, 1.25rem + 1.1vw, 2.125rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.calendar-subtitle {
+  color: rgba(69, 70, 77, 1);
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+/* Quarter Switcher & View Toggle */
+.calendar-quarter-group {
+  background-color: rgba(242, 244, 246, 1);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.calendar-quarter-btn {
+  border: 0;
+  background-color: transparent;
+  color: rgba(69, 70, 77, 1);
+  font-size: 11px;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.calendar-quarter-btn:hover {
+  color: #191C1E;
+}
+
+.calendar-quarter-btn.is-active {
+  background-color: rgba(19, 26, 51, 1);
+  color: #ffffff;
+}
+
+.calendar-view-toggle {
+  background-color: rgba(242, 244, 246, 1);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.calendar-view-btn {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background-color: transparent;
+  color: rgba(69, 70, 77, 1);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.calendar-view-btn.is-active {
+  background-color: #ffffff;
+  color: #191C1E;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+/* Event Card */
+.event-cal-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.95);
+  box-shadow: 0 2px 10px -2px rgba(15, 23, 42, 0.04);
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+}
+
+.event-cal-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 108, 73, 0.3);
+  box-shadow: 0 14px 28px -10px rgba(15, 23, 42, 0.09);
+}
+
+/* Top Type Pill & Location */
+.event-type-badge {
+  font-size: 9.5px;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+}
+
+.event-type-badge--mint {
+  background-color: rgba(209, 250, 229, 0.85);
+  color: rgba(0, 108, 73, 1);
+}
+
+.event-type-badge--dark {
+  background-color: rgba(19, 26, 51, 1);
+  color: #ffffff;
+}
+
+.event-type-badge--neutral {
+  background-color: rgba(241, 245, 249, 1);
+  color: rgba(51, 65, 85, 1);
+}
+
+.event-loc-tag {
+  color: rgba(69, 70, 77, 1);
+  font-size: 11px;
+}
+
+/* Date Box */
+.event-date-box {
+  width: 44px;
+  padding: 5px 4px;
+  line-height: 1.1;
+  transition: background-color 0.22s ease, border-color 0.22s ease, color 0.22s ease;
+}
+
+.event-date-box--neutral {
+  background-color: rgba(248, 250, 252, 1);
+  border: 1px solid rgba(226, 232, 240, 1);
+}
+
+.event-date-box--mint {
+  background-color: rgba(209, 250, 229, 0.75);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+.event-date-month {
+  font-size: 9px;
+  letter-spacing: 0.06em;
+  color: rgba(69, 70, 77, 1);
+}
+
+.event-date-day {
+  font-size: 15px;
+  color: #191C1E;
+  margin-top: 2px;
+}
+
+.event-time-line {
+  color: #191C1E;
+  font-size: 11.5px;
+  line-height: 1.35;
+}
+
+.event-sub-meta {
+  color: rgba(100, 116, 139, 1);
+  font-size: 10.5px;
+}
+
+.event-grant-meta {
+  color: rgba(0, 108, 73, 1);
+  font-size: 10.5px;
+}
+/* Title & Description */
+.event-cal-title {
+  color: #191C1E;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.event-cal-desc {
+  color: rgba(69, 70, 77, 1);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+/* Speaker Strip (Card 1) */
+.event-speaker-strip {
+  background-color: rgba(248, 250, 252, 1);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+}
+
+.event-mini-avatar {
+  width: 30px;
+  height: 30px;
+}
+
+.event-mini-name {
+  color: #191C1E;
+  font-size: 11px;
+  line-height: 1.25;
+}
+
+.event-mini-role {
+  color: rgba(100, 116, 139, 1);
+  font-size: 9.5px;
+}
+
+.event-cme-pill {
+  background-color: rgba(209, 250, 229, 0.8);
+  color: rgba(0, 108, 73, 1);
+  font-size: 10px;
+}
+
+/* Highlight Strip (Cards 2–6) */
+.event-highlight-strip {
+  background-color: rgba(248, 250, 252, 1);
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  font-size: 10.5px;
+}
+
+.event-highlight-left {
+  color: rgba(69, 70, 77, 1);
+}
+
+.event-highlight-right {
+  color: rgba(0, 108, 73, 1);
+}
+
+.event-seats-alert {
+  color: rgba(185, 28, 28, 1);
+}
+
+/* Card Footer & Action Pills */
+.event-cal-footer {
+  border-top: 1px solid rgba(241, 245, 249, 1);
+}
+
+.event-access-text {
+  font-size: 11px;
+}
+
+.event-access-text--emerald {
+  color: rgba(0, 108, 73, 1);
+}
+
+.event-access-text--muted {
+  color: rgba(100, 116, 139, 1);
+}
+
+/* ========== Calendar Card Action Buttons (Default Black -> Hover Emerald) ========= */
+
+.event-cal-cta-btn {
+  background-color: #0F172A !important;
+  color: #ffffff !important;
+  border: 1px solid #0F172A !important;
+  font-size: 11px !important;
+  line-height: 1.25 !important;
+  padding: 6px 14px !important;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.event-cal-cta-btn:hover,
+.event-cal-cta-btn:focus-visible {
+  background-color: rgba(0, 108, 73, 1) !important;
+  border-color: rgba(0, 108, 73, 1) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+.event-cal-cta-btn:active {
+  transform: translateY(0);
+}
+
+/* List View Mode */
+.events-calendar-grid--list .event-calendar-col {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+/* ========== Past Events & Clinical Impact Section ========= */
+
+.past-events-impact-section {
+  background-color: #ffffff;
+}
+
+.impact-eyebrow {
+  color: rgba(0, 108, 73, 1);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+.impact-heading {
+  color: #191C1E;
+  font-size: clamp(1.5rem, 1.25rem + 1.1vw, 2.125rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.impact-subtitle {
+  color: rgba(69, 70, 77, 1);
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.impact-archive-link {
+  color: rgba(0, 108, 73, 1);
+  font-size: 12px;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.impact-archive-link:hover {
+  color: rgba(0, 130, 88, 1);
+}
+
+/* Left Featured Card */
+.impact-featured-card {
+  background-color: rgba(244, 246, 248, 0.95);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.impact-featured-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px -10px rgba(15, 23, 42, 0.07);
+}
+
+.impact-pill {
+  font-size: 10.5px;
+  line-height: 1.2;
+}
+
+.impact-pill--muted {
+  background-color: rgba(226, 232, 240, 0.85);
+  color: rgba(51, 65, 85, 1);
+}
+
+.impact-pill--mint {
+  background-color: rgba(209, 250, 229, 0.85);
+  color: rgba(0, 108, 73, 1);
+}
+
+.impact-featured-title {
+  color: #191C1E;
+  font-size: clamp(1.25rem, 1.1rem + 0.65vw, 1.625rem);
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+}
+
+.impact-featured-desc {
+  color: rgba(69, 70, 77, 1);
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+
+/* White Metrics Boxes inside Left Card */
+.impact-metric-box {
+  background-color: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 0.85);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
+}
+
+.impact-metric-num {
+  color: #191C1E;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.impact-metric-num--emerald {
+  color: rgba(0, 108, 73, 1);
+}
+
+.impact-metric-label {
+  color: rgba(100, 116, 139, 1);
+  font-size: 11px;
+  margin-top: 2px;
+}
+
+/* Left Card Buttons */
+.impact-btn-dark,
+.impact-btn-light {
+  font-size: 11.5px;
+  line-height: 1.25;
+  padding: 8px 16px;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.impact-btn-dark {
+  background-color: #0F172A !important;
+  border: 1px solid #0F172A !important;
+  color: #ffffff !important;
+}
+
+.impact-btn-dark:hover,
+.impact-btn-dark:focus-visible {
+  background-color: rgba(0, 108, 73, 1) !important;
+  border-color: rgba(0, 108, 73, 1) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+.impact-btn-light {
+  background-color: #ffffff !important;
+  border: 1px solid rgba(203, 213, 225, 1) !important;
+  color: #191C1E !important;
+}
+
+.impact-btn-light:hover,
+.impact-btn-light:focus-visible {
+  background-color: rgba(241, 245, 249, 1) !important;
+  border-color: rgba(148, 163, 184, 1) !important;
+  color: #191C1E !important;
+  transform: translateY(-1px);
+}
+
+/* Right Stacked Cards */
+.impact-side-card {
+  background-color: rgba(244, 246, 248, 0.95);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  transition: transform 0.22s ease, box-shadow 0.22s ease;
+}
+
+.impact-side-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px -10px rgba(15, 23, 42, 0.07);
+}
+
+.impact-side-tag {
+  color: rgba(0, 108, 73, 1);
+  font-size: 10px;
+  letter-spacing: 0.07em;
+}
+
+.impact-side-date {
+  color: rgba(100, 116, 139, 1);
+  font-size: 11px;
+}
+
+.impact-side-title {
+  color: #191C1E;
+  font-size: 15.5px;
+  line-height: 1.3;
+}
+
+.impact-side-desc {
+  color: rgba(69, 70, 77, 1);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.impact-side-stat {
+  color: #191C1E;
+  font-size: 11px;
+}
+
+.impact-side-link {
+  color: rgba(0, 108, 73, 1);
+  font-size: 11px;
+  transition: color 0.2s ease;
+}
+
+.impact-side-link:hover {
+  color: rgba(0, 130, 88, 1);
+}
+
+
+
+/* ========== Co-Create With Us CTA Banner ========= */
+
+.cocreate-cta-section {
+  background-color: rgba(247, 249, 251, 1);
+}
+
+.cocreate-banner-card {
+  background: linear-gradient(125deg, #070d19 0%, #091322 58%, #071b19 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 44px -18px rgba(7, 13, 25, 0.45);
+}
+
+.cocreate-banner-glow {
+  width: 340px;
+  height: 340px;
+  right: -70px;
+  bottom: -90px;
+  background-color: rgba(0, 108, 73, 0.24);
+  filter: blur(110px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.cocreate-badge {
+  background-color: rgba(0, 108, 73, 0.35);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: rgba(110, 231, 183, 1);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  line-height: 1.3;
+}
+
+.cocreate-heading {
+  color: #ffffff;
+  font-size: clamp(1.5rem, 1.2rem + 1.3vw, 2.25rem);
+  line-height: 1.18;
+  letter-spacing: -0.02em;
+  max-width: 24ch;
+}
+
+.cocreate-desc {
+  color: rgba(148, 163, 184, 1);
+  font-size: 13.5px;
+  line-height: 1.6;
+  max-width: 62ch;
+}
+
+.cocreate-meta-item {
+  color: rgba(203, 213, 225, 0.92);
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+.cocreate-meta-icon {
+  color: rgba(16, 185, 129, 1);
+}
+
+/* Right Box: Propose a Format */
+.cocreate-format-box {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+}
+
+.cocreate-format-title {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.cocreate-format-sub {
+  color: rgba(148, 163, 184, 1);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.cocreate-btn-primary,
+.cocreate-btn-secondary {
+  font-size: 12px;
+  line-height: 1.3;
+  padding: 9px 14px;
+  min-height: 38px;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.cocreate-btn-primary:hover,
+.cocreate-btn-primary:focus-visible {
+  background-color: rgba(0, 128, 86, 1) !important;
+  border-color: rgba(110, 231, 183, 0.55) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+.cocreate-btn-secondary:hover,
+.cocreate-btn-secondary:focus-visible {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+.cocreate-contact-note {
+  color: rgba(148, 163, 184, 1);
+  font-size: 10.5px;
+}
+
+.cocreate-email-link {
+  color: rgba(16, 185, 129, 1);
+}
+
+.cocreate-email-link:hover {
+  color: rgba(110, 231, 183, 1);
+  text-decoration: underline !important;
+}
+
+
+
+/* ========== Event Digest Subscription Bar ========= */
+
+.event-digest-section {
+  background-color: #ffffff;
+}
+
+.event-digest-card {
+  background-color: rgba(244, 246, 248, 0.95);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 2px 12px -4px rgba(15, 23, 42, 0.04);
+}
+
+.event-digest-eyebrow-icon,
+.event-digest-eyebrow {
+  color: rgba(0, 108, 73, 1);
+}
+
+.event-digest-eyebrow {
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+}
+
+.event-digest-heading {
+  color: #191C1E;
+  font-size: clamp(1.2rem, 1.05rem + 0.7vw, 1.55rem);
+  line-height: 1.28;
+  letter-spacing: -0.015em;
+  max-width: 34ch;
+}
+
+.event-digest-desc {
+  color: rgba(100, 116, 139, 1);
+  font-size: 12px;
+  line-height: 1.55;
+  max-width: 54ch;
+}
+
+/* Pill Email Input */
+.event-digest-input {
+  min-height: 40px;
+  padding: 9px 18px;
+  font-size: 12px;
+  color: #191C1E;
+  background-color: #ffffff;
+  border: 1px solid rgba(226, 232, 240, 1);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.03);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-digest-input::placeholder {
+  color: rgba(148, 163, 184, 1);
+  font-size: 11.5px;
+}
+
+.event-digest-input:focus {
+  background-color: #ffffff;
+  color: #191C1E;
+  border-color: rgba(0, 108, 73, 0.55);
+  box-shadow: 0 0 0 3px rgba(0, 108, 73, 0.12);
+  outline: none;
+}
+
+/* Notify Me Button (Default Dark -> Hover Emerald) */
+.event-digest-submit-btn {
+  min-height: 40px;
+  padding: 9px 22px;
+  font-size: 12px;
+  line-height: 1.2;
+  background-color: #0F172A !important;
+  border: 1px solid #0F172A !important;
+  color: #ffffff !important;
+  white-space: nowrap;
+  transition: background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.event-digest-submit-btn:hover,
+.event-digest-submit-btn:focus-visible {
+  background-color: rgba(0, 108, 73, 1) !important;
+  border-color: rgba(0, 108, 73, 1) !important;
+  color: #ffffff !important;
+  transform: translateY(-1px);
+}
+
+.event-digest-submit-btn:active {
+  transform: translateY(0);
+}
+
+.event-digest-feedback {
+  font-size: 11px;
+  color: rgba(0, 108, 73, 1);
+}
