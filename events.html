@@ -375,10 +375,11 @@
                 </div>
         
                 <!-- Dark Flagship Showcase Card -->
-                <div class="flagship-showcase-card position-relative overflow-hidden p-4" data-aos="fade-up"
+                <div class="flagship-showcase-card position-relative overflow-hidden p-4" data-aos="fade-up "
                     data-aos-delay="100" data-aos-duration="700">
-                    <!-- Subtle Ambient Glow inside Dark Card -->
-                    <div class="flagship-card-glow position-absolute rounded-circle"></div>
+
+                    <!-- Bottom-Right Glow -->
+                    <div class="flagship-card-glow-bottom-right position-absolute rounded-circle"></div>
         
                     <div class="row g-4 g-xl-5 align-items-stretch position-relative z-1">
                         <!-- Left Column: Details, Tracks, Date/Location & CTAs -->
@@ -491,45 +492,38 @@
                                 </div>
                             </div>
         
-                            <!-- Bottom Actions -->
-                            <div>
-                                <div class="d-flex flex-wrap align-items-center gap-3 mb-3">
-                                    <a href="#register-summit"
-                                        class="btn flagship-register-cta-btn plus-jakarta-sans-700 rounded-pill d-inline-flex align-items-center justify-content-center gap-2"
-                                        style="background-color: rgba(0, 108, 73, 1); border: 1px solid rgba(16, 185, 129, 0.35); color: #ffffff;">
-                                        <span>Register for Summit (Early Bird)</span>
-                                        <span class="material-symbols-outlined flagship-cta-icon" style="color: #ffffff;"
-                                            aria-hidden="true">arrow_forward</span>
-                                    </a>
-                                
-                                    <a href="#download-agenda"
-                                        class="btn flagship-agenda-pdf-btn plus-jakarta-sans-600 rounded-pill d-inline-flex align-items-center justify-content-center gap-2"
-                                        style="background-color: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.16); color: #ffffff;">
-                                        <span class="material-symbols-outlined flagship-cta-icon" style="color: #ffffff;"
-                                            aria-hidden="true">download</span>
-                                        <span>Download Full Agenda (PDF)</span>
-                                    </a>                          
-                                </div>
-        
-                                <a href="#apply-pitch"
-                                    class="flagship-pitch-link inter-500 d-inline-flex align-items-center gap-1 text-decoration-none">
-                                    <span>Apply to Pitch / Speak</span>
-                                    <span class="material-symbols-outlined" style="font-size: 14px;"
-                                        aria-hidden="true">open_in_new</span>
+                            <div class="flagship-actions mb-3 d-flex flex-md-row flex-column gap-2">
+                                <a href="#register-summit" class="flagship-register-btn plus-jakarta-sans-600 px-2 py-1">
+                                    Register for Summit (Early Bird)
+                                    <span class="material-symbols-outlined flagship-cta-icon" aria-hidden="true">arrow_forward</span>                            
+                                </a>
+
+
+                                <a href="#download-agenda" class="flagship-download-pdf-btn plus-jakarta-sans-600 px-2 py-1">
+                                    Download Full Agenda (PDF)
+                                    <span class="material-symbols-outlined flagship-cta-icon" aria-hidden="true">download</span>
                                 </a>
                             </div>
+
+
+                            <a href="#apply-pitch"
+                                class="flagship-pitch-link inter-500 d-inline-flex align-items-center gap-1 text-decoration-none">
+                                <span>Apply to Pitch / Speak</span>
+                                <span class="material-symbols-outlined" style="font-size: 14px;"
+                                    aria-hidden="true">open_in_new</span>
+                            </a>
                         </div>
         
                         <!-- Right Column: Auditorium Photo + Keynote Faculty & Panellists -->
                         <div class="col-lg-5 d-flex flex-column gap-3">
                             <!-- Auditorium Stock Image Wrapper -->
-                            <div class="flagship-media-card position-relative overflow-hidden rounded-3">
+                            <div class="flagship-media-card position-relative overflow-hidden">
                                 <img src="images/main-planetary-hall-setup.jpg"
                                     alt="Main Plenary Hall Setup at Pakistan Digital Health Summit"
-                                    class="img-fluid w-100 flagship-media-img" loading="lazy">
+                                    class="img-fluid w-100 h-100 object-fit-cover" loading="lazy">
                                 <!-- Bottom Overlays -->
                                 <div
-                                    class="flagship-media-overlay position-absolute bottom-0 start-0 end-0 p-3 d-flex align-items-center justify-content-between gap-2">
+                                    class="flagship-media-overlay position-absolute bottom-0 start-0 end-0 p-3 d-flex align-items-center flex-wrap flex-sm-row justify-content-between gap-2">
                                     <span
                                         class="flagship-media-badge d-inline-flex align-items-center gap-2 rounded-pill px-3 py-1 plus-jakarta-sans-600">
                                         <span class="flagship-live-dot rounded-circle flex-shrink-0" aria-hidden="true"></span>
@@ -542,7 +536,7 @@
                             </div>
         
                             <!-- Keynote Faculty & Panellists Panel -->
-                            <div class="flagship-speakers-panel p-3 rounded-3">
+                            <div class="flagship-speakers-panel p-3">
                                 <div class="d-flex align-items-center justify-content-between gap-2 mb-3">
                                     <span class="flagship-speakers-heading plus-jakarta-sans-700 text-uppercase">
                                         KEYNOTE FACULTY &amp; PANELLISTS
@@ -1116,7 +1110,7 @@
         
                             <!-- Bottom CTA Buttons -->
                             <div class="d-flex flex-column flex-sm-row flex-wrap align-items-stretch align-items-sm-center gap-2">
-                                <a href="#watch-plenary-sessions"
+                                <!-- <a href="#watch-plenary-sessions"
                                     class="btn impact-btn-dark plus-jakarta-sans-600 rounded-pill d-inline-flex align-items-center justify-content-center gap-2">
                                     <span class="material-symbols-outlined impact-cta-icon flex-shrink-0" style="font-size: 16px;"
                                         aria-hidden="true">play_circle</span>
@@ -1128,7 +1122,7 @@
                                     <span class="material-symbols-outlined impact-cta-icon flex-shrink-0" style="font-size: 16px;"
                                         aria-hidden="true">description</span>
                                     <span>Download 2023 Proceedings Report</span>
-                                </a>
+                                </a> -->
                             </div>
                         </article>
                     </div>

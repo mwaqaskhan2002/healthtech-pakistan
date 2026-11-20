@@ -2633,28 +2633,16 @@
   color: #ffffff;
 }
 
-.flagship-card-glow {
-  width: 420px;
-  height: 420px;
-  top: -140px;
-  right: -100px;
-  background-color: rgba(0, 108, 73, 0.18);
-  filter: blur(140px);
-  pointer-events: none;
-}
-
-/* Bottom-Right Corner Glow inside Flagship Card */
 .flagship-card-glow-bottom-right {
   width: 384px;
   height: 384px;
   bottom: -120px;
   right: -110px;
-  background-color: rgba(0, 108, 73, 0.15) !important;
-  filter: blur(128px);
+  background-color: rgba(0, 108, 73, 0.15);
+  filter: blur(64px);      /* Figma blur 128 ≈ CSS 64px */
   pointer-events: none;
   z-index: 0;
 }
-
 /* Top Pills inside Card */
 .flagship-pill {
   font-size: 10.5px;
@@ -2674,8 +2662,7 @@
 }
 
 .flagship-pill--teal {
-  background-color: rgba(16, 185, 129, 0.14);
-  border: 1px solid rgba(16, 185, 129, 0.28);
+  background-color: rgba(108, 248, 187, 0.2);
   color: rgba(108, 248, 187, 1);
 }
 
@@ -2688,14 +2675,14 @@
 }
 
 .flagship-card-tagline {
-  color: rgba(74, 222, 128, 1);
-  font-size: 14.5px;
+  color: rgba(108, 248, 187, 1);
+  font-size: 15px;
   line-height: 1.45;
 }
 
 .flagship-card-desc {
-  color: rgba(203, 213, 225, 0.9);
-  font-size: 13.5px;
+  color: rgba(123, 131, 160, 1);
+  font-size: 13px;
   line-height: 1.65;
 }
 
@@ -2721,7 +2708,7 @@
 
 .flagship-track-icon {
   font-size: 16px;
-  color: rgba(74, 222, 128, 1);
+  color: rgba(0, 108, 73, 1);
 }
 
 /* Date & Location Strip */
@@ -2732,7 +2719,7 @@
 
 .flagship-meta-icon {
   font-size: 18px;
-  color: rgba(74, 222, 128, 1);
+  color: rgba(0, 108, 73, 1);
 }
 
 .flagship-meta-title {
@@ -2747,44 +2734,57 @@
   line-height: 1.4;
 }
 
-.flagship-register-cta-btn,
-.flagship-agenda-pdf-btn {
-  min-height: 42px;
-  padding: 10px 20px;
-  font-size: 12.5px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
-  white-space: nowrap;
-  transition: background-color 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease, transform 0.22s ease;
+.flagship-register-btn,
+.flagship-download-pdf-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(6px, 1.6vw, 8px);
+  min-height: 44px;
+  font-size: clamp(11px, 3.4vw, 14px);
+  line-height: 1.3;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.22s ease, border-color 0.22s ease,
+              box-shadow 0.22s ease;
+}
+
+.flagship-register-btn {
+  background-color: rgba(0, 108, 73, 1);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.flagship-download-pdf-btn {
+  background-color: rgba(224, 227, 229, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.flagship-register-btn:hover,
+.flagship-register-btn:focus-visible {
+  background-color: rgba(0, 126, 86, 1);
+  border-color: rgba(108, 248, 187, 0.5);
+  color: #fff;
+}
+
+.flagship-download-pdf-btn:hover,
+.flagship-download-pdf-btn:focus-visible {
+  background-color: rgba(224, 227, 229, 0.3);
+  border-color: rgba(255, 255, 255, 0.28);
+  color: #fff;
 }
 
 .flagship-cta-icon {
-  font-size: 18px;
+  flex-shrink: 0;
+  font-size: clamp(16px, 4.5vw, 18px);
   line-height: 1;
+  color: #fff;
   transition: transform 0.22s ease;
 }
 
-.flagship-register-cta-btn:hover,
-.flagship-register-cta-btn:focus-visible {
-  background-color: rgba(0, 126, 86, 1) !important;
-  border-color: rgba(108, 248, 187, 0.5) !important;
-  color: #ffffff !important;
-}
-
-.flagship-register-cta-btn:hover .flagship-cta-icon {
-  transform: translateX(3px);
-}
-
-.flagship-agenda-pdf-btn:hover,
-.flagship-agenda-pdf-btn:focus-visible {
-  background-color: rgba(255, 255, 255, 0.15) !important;
-  border-color: rgba(255, 255, 255, 0.28) !important;
-  color: #ffffff !important;
-}
-
-.flagship-agenda-pdf-btn:hover .flagship-cta-icon {
-  transform: translateY(2px);
-}
 .flagship-pitch-link {
   color: rgba(148, 163, 184, 1);
   font-size: 12px;
@@ -2798,17 +2798,28 @@
 /* Right Column: Media Card */
 .flagship-media-card {
   border: 1px solid rgba(255, 255, 255, 0.1);
-  min-height: 220px;
+  height: 256px;
 }
 
-.flagship-media-img {
-  height: 235px;
-  object-fit: cover;
-  display: block;
+/* Figma gradient: poori image par, neeche se upar */
+.flagship-media-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(19, 26, 51, 1) 0%,
+    rgba(19, 26, 51, 0) 50%,
+    rgba(19, 26, 51, 0) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
 }
 
+/* Badges gradient ke upar rahen */
 .flagship-media-overlay {
-  background: linear-gradient(180deg, rgba(13, 21, 40, 0) 0%, rgba(13, 21, 40, 0.85) 100%);
+  background: none;
+  z-index: 2;
 }
 
 .flagship-media-badge {
@@ -2822,7 +2833,6 @@
 /* Right Column: Speakers Panel */
 .flagship-speakers-panel {
   background-color: rgba(224, 227, 229, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .flagship-speakers-heading {
@@ -2860,15 +2870,14 @@
 }
 
 .flagship-speaker-role {
-  color: rgba(148, 163, 184, 1);
-  font-size: 10px;
+  color: rgba(123, 131, 160, 1);
+  font-size: 9px;
   line-height: 1.3;
 }
 
 .flagship-speaker-org {
   color: rgba(74, 222, 128, 1);
-  font-size: 10px;
-  line-height: 1.25;
+  font-size: 9px;
 }
 
 .flagship-speakers-footer {
