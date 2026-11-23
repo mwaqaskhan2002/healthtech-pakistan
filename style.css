@@ -2960,16 +2960,46 @@
 
 /* Event Card */
 .event-cal-card {
+  position: relative;
+  overflow: hidden;
   background-color: #ffffff;
-  border: 1px solid rgba(226, 232, 240, 0.95);
   box-shadow: 0 2px 10px -2px rgba(15, 23, 42, 0.04);
   transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+  border-radius: 32px;
+}
+
+.event-cal-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Normal state mein bilkul hidden */
+.event-cal-card::after {
+  content: "";
+  position: absolute;
+  top: -34px;
+  right: -34px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(0, 108, 73, 0.1);
+  opacity: 0;
+  transform: translate(8px, -8px) scale(0.9);
+  pointer-events: none;
+  z-index: 0;
+  transition: opacity 0.28s ease, transform 0.32s ease;
 }
 
 .event-cal-card:hover {
-  transform: translateY(-3px);
+  /* transform: translateY(-3px); */
   border-color: rgba(0, 108, 73, 0.3);
   box-shadow: 0 14px 28px -10px rgba(15, 23, 42, 0.09);
+}
+
+/* Sirf hover karne par appear ho */
+.event-cal-card:hover::after {
+  opacity: 1;
+  transform: scale(1.08);
 }
 
 /* Top Type Pill & Location */
@@ -2999,36 +3029,48 @@
   font-size: 11px;
 }
 
-/* Date Box */
+.event-loc-tag-icon{
+  font-size: 13px !important;
+  color: rgba(0, 108, 73, 1);
+  margin-bottom: 0;
+}
+
+/* Date Box Base */
 .event-date-box {
   width: 44px;
   padding: 5px 4px;
   line-height: 1.1;
+  background-color: rgba(248, 250, 252, 1);
+  border: 1px solid rgba(226, 232, 240, 1);
   transition: background-color 0.22s ease, border-color 0.22s ease, color 0.22s ease;
 }
 
-.event-date-box--neutral {
-  background-color: rgba(248, 250, 252, 1);
-  border: 1px solid rgba(226, 232, 240, 1);
+.event-cal-card:hover .event-date-box {
+  background-color: rgba(108, 248, 187, 0.4);
+  border-color: rgba(108, 248, 187, 0.6);
 }
 
-.event-date-box--mint {
-  background-color: rgba(209, 250, 229, 0.75);
-  border: 1px solid rgba(16, 185, 129, 0.35);
-}
 
+/* Month & Day Typography */
 .event-date-month {
   font-size: 9px;
   letter-spacing: 0.06em;
-  color: rgba(69, 70, 77, 1);
+  color: rgba(0, 108, 73, 1);
+  transition: color 0.22s ease;
 }
 
 .event-date-day {
   font-size: 15px;
   color: #191C1E;
   margin-top: 2px;
+  transition: color 0.22s ease;
 }
 
+.event-cal-card:hover .event-date-day{
+  color: rgba(0, 108, 73, 1);
+}
+
+/* Meta Lines Beside Date Box */
 .event-time-line {
   color: #191C1E;
   font-size: 11.5px;
@@ -3044,6 +3086,8 @@
   color: rgba(0, 108, 73, 1);
   font-size: 10.5px;
 }
+
+
 /* Title & Description */
 .event-cal-title {
   color: #191C1E;
@@ -3139,7 +3183,6 @@
   background-color: rgba(0, 108, 73, 1) !important;
   border-color: rgba(0, 108, 73, 1) !important;
   color: #ffffff !important;
-  transform: translateY(-1px);
 }
 
 .event-cal-cta-btn:active {
@@ -3391,13 +3434,14 @@
 }
 
 .cocreate-meta-item {
-  color: rgba(203, 213, 225, 0.92);
-  font-size: 11px;
+  color: rgba(123, 131, 160, 1);
+  font-size: 10px;
   line-height: 1.35;
 }
 
 .cocreate-meta-icon {
-  color: rgba(16, 185, 129, 1);
+  color: rgba(0, 108, 73, 1);
+  font-size: 16px !important;
 }
 
 /* Right Box: Propose a Format */
@@ -3526,8 +3570,7 @@
 
 .event-digest-submit-btn:hover,
 .event-digest-submit-btn:focus-visible {
-  background-color: rgba(0, 108, 73, 1) !important;
-  border-color: rgba(0, 108, 73, 1) !important;
+  background-color: rgba(34, 44, 79, 1) !important;
   color: #ffffff !important;
 }
 
