@@ -3582,3 +3582,18 @@
   font-size: 11px;
   color: rgba(0, 108, 73, 1);
 }
+
+
+/* Captcha Slot  */
+
+.captcha-slot {
+  min-height: 78px !important;
+  overflow-x: auto;
+}
+
+@media (max-width: 375px) {
+  .captcha-slot .g-recaptcha {
+    transform: scale(0.9);
+    transform-origin: 0 0;
+  }
+}
